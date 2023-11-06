@@ -126,5 +126,5 @@ _Below is an example of how you can instruct your audience on installing and set
 See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
 
 
-[issues-shield]: https://github.com/othneildrew/Best-README-Template/issues.svg?style=for-the-badge
+[issues-shield]: https://img.shields.io/github/issues/samuser107/htmlProject.svg?style=for-the-badge
 [issues-url]: https://github.com/samuser107/htmlProject/issues
