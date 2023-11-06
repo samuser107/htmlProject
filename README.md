@@ -55,8 +55,11 @@
 ### Global informations
 
 #### Schedule of the project
-- [x] 2023-10-06: Project start
-- [ ] 2023-12-01: Project end (on Moovin)
+![Static Badge](https://img.shields.io/badge/2023_10_06-Project_started-green)
+
+![Static Badge](https://img.shields.io/badge/2023_12_01-Project_submission-blue)
+
+<!-- - [ ] 2023-12-01: Project end (on Moovin) -->
 
 #### Schedule of the help sessions
 -  <i>1BIN2-1BIN3 Ve 17/11 14h30-16h30 Distanciel Mr Choquet</i>
@@ -68,6 +71,17 @@ Email of Olivier Choquet : olivier.choquet@vinci.be
 
 ### Specifications
 
+We ask you to write the HTML pages of a website presenting the restaurant of your team. Every
+member will write one HTML page of this website and present on this page a part of the restaurant.
+For example, you can present:
+-  The food page of the restaurant.
+- The drink page of the restaurant
+- The contact & schedules page of the restaurant
+- The food delivery page of the restaurant
+- The photo event page of the restaurant
+- A page who describes kitchen type
+- ….
+<br/>
 - [ ] The website will have a common header and menu for all the pages of the website. This will need to be defined/worked on together by the team.
 - [ ] The menu will give access to every member page of the team. The menu will have to have a dynamic appearance (hover). http://ochoquet.be/syllabusHTML/css_formatage.html#liens
 - [ ] The name of all members of the team will be written at the end of every page. This will
