@@ -126,7 +126,7 @@ Simple knowledge of HTML and CSS is required.
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/*Your_Username*/htmlProject.git
+   git clone https://github.com/samuser107/htmlProject.git
    ```
 
 <p align="right"><a href="#readme-top">back to top</a></p>
@@ -138,7 +138,7 @@ Simple knowledge of HTML and CSS is required.
 - [ ] Create an even distribution of the tasks
 - [ ] Add here...
 
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
+See the [open issues](https://github.com/samuser107/htmlProject/issues) for a full list of proposed features (and known issues).
 
 <!-- [issues-shield]: https://img.shields.io/github/issues/samuser107/htmlProject.svg?style=for-the-badge -->
 [issues-url]: https://github.com/samuser107/htmlProject/issues
