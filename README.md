@@ -30,6 +30,7 @@
     <li>
       <a href="#about-the-project">About The Project</a>
       <ul>
+      <li><a href="#global-informations">Global informations</a></li>
         <li><a href="#specifications">Specifications</a></li>
         <li><a href="#methodology">Methodology</a></li>
         <li><a href="#examination-criteria">Examination criteria</a></li>
@@ -50,6 +51,20 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
+
+### Global informations
+
+#### Schedule of the project
+- [x] 2023-10-06: Project start
+- [ ] 2023-12-01: Project end (on Moovin)
+
+#### Schedule of the help sessions
+-  <i>1BIN2-1BIN3 Ve 17/11 14h30-16h30 Distanciel Mr Choquet</i>
+-  <i>1BIN1-1BIN6 Je 23/11 13h45-15h45 Distanciel Mr LeCharlier</i>
+-  <b>1BIN4-1BIN5-1BIN7 Ve 24/11 14h30-16h30 Distanciel Mr Choquet/Mr LeCharlier</b>
+
+#### Contact
+Email of Olivier Choquet : olivier.choquet@vinci.be
 
 ### Specifications
 
