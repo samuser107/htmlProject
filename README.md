@@ -10,11 +10,13 @@
     <img src="images/vinci.jpg" alt="Logo" width="360" height="189">
   </a>
 
-  <h3 align="center">HTML project 1</h3>
+  <h3 align="center">HTML project</h3>
 
   <p align="center">
     12th group
-    <br />
+    <br/>
+    <b>Members :</b> Moulay Nimour, Louis-Nicolas Longheval, Aliona Michenko, Filipe Lopez
+    <br/>
     <a href="https://github.com/samuser107/htmlProject/issues">Report Bug</a>
     ·
     <a href="https://github.com/samuser107/htmlProject/issues">Request Feature</a>
@@ -112,7 +114,7 @@ Simple knowledge of HTML and CSS is required.
    git clone https://github.com/*Your_Username*/htmlProject.git
    ```
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right"><a href="#readme-top">back to top</a></p>
 
 <!-- ROADMAP -->
 ## Roadmap
