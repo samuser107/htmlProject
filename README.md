@@ -82,6 +82,7 @@ For example, you can present:
 - [ ] A page who describes kitchen type
 - ….
 <br/>
+
 - [ ] The website will have a common header and menu for all the pages of the website. This will need to be defined/worked on together by the team.
 - [ ] The menu will give access to every member page of the team. The menu will have to have a dynamic appearance (hover). http://ochoquet.be/syllabusHTML/css_formatage.html#liens
 - [ ] The name of all members of the team will be written at the end of every page. This will
