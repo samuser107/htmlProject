@@ -15,7 +15,7 @@
   <p align="center">
     12th group
     <br/>
-    <b>Members :</b> Moulay Nimour, Louis-Nicolas Longheval, Aliona Michenko, Filipe Lopez
+    <b>Members :</b> Moulay Nimour, Louis-Nicolas Longheval, Alona Mykhailenko, Filipe Lopez and Rebecca Cotta
     <br/>
     <a href="https://github.com/samuser107/htmlProject/issues">Report Bug</a>
     ·
@@ -74,12 +74,12 @@ Email of Olivier Choquet : olivier.choquet@vinci.be
 We ask you to write the HTML pages of a website presenting the restaurant of your team. Every
 member will write one HTML page of this website and present on this page a part of the restaurant.
 For example, you can present:
--  The food page of the restaurant.
-- The drink page of the restaurant
-- The contact & schedules page of the restaurant
-- The food delivery page of the restaurant
-- The photo event page of the restaurant
-- A page who describes kitchen type
+- [ ] The food page of the restaurant.
+- [ ] The drink page of the restaurant
+- [ ] The contact & schedules page of the restaurant
+- [ ] The food delivery page of the restaurant : <b> Moulay </b>
+- [ ] The photo event page of the restaurant
+- [ ] A page who describes kitchen type
 - ….
 <br/>
 - [ ] The website will have a common header and menu for all the pages of the website. This will need to be defined/worked on together by the team.
@@ -148,7 +148,20 @@ Simple knowledge of HTML and CSS is required.
 <!-- ROADMAP -->
 ## Roadmap
 
+
 - [ ] Have a template of what we will create
+
+#### Logo
+<img src="images/Restaurant-Logo.png" alt="Logo" width="100" height="100">
+
+#### Color palette
+  <ol>
+    <a href="https://coolors.co/d6d6d6-cfb5c1-422040">Palette of Louni</a>
+  <br/>
+    <a href="https://coolors.co/73683b-000000-ffd700">Palette of Moulay</a>
+  </ol>
+<br>
+
 - [ ] Create an even distribution of the tasks
 - [ ] Add here...
 
