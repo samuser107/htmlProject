@@ -77,7 +77,7 @@ For example, you can present:
 - [ ] The food page of the restaurant.
 - [ ] The drink page of the restaurant
 - [ ] The contact & schedules page of the restaurant
-- [ ] <b> Moulay </b> :The food delivery page of the restaurant : 
+- [ ] <b> Moulay </b> : The food delivery page of the restaurant : 
 - [ ] The photo event page of the restaurant
 - [ ] A page who describes kitchen type
 - ….
