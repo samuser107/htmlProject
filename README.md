@@ -163,8 +163,37 @@ Simple knowledge of HTML and CSS is required.
   </ol>
 <br>
 
-- [ ] Create an even distribution of the tasks
-- [ ] Add here...
+### Menu
+#### Main Courses:
+
+- Coq au Vin: A classic French dish, where chicken is braised with wine, lardons, mushrooms, and possibly garlic. A dish that sings with depth and warmth, perfect for a cozy yet sophisticated dinner.
+
+- Beef Bourguignon: This French stew marries beef with red wine, onions, and mushrooms, slow-cooked to tender perfection. It's a symphony of flavors that speaks of the French countryside.
+
+- Risotto ai Funghi Porcini: An Italian masterpiece, this risotto is creamy, earthy, and rich, infused with the distinct aroma of Porcini mushrooms and a generous helping of Parmigiano-Reggiano.
+
+- Saltimbocca alla Romana: Thin veal cutlets, layered with sage and prosciutto, cooked in white wine and butter. A dish that literally means "jumps in the mouth" in Italian - an experience you won't forget.
+
+- Bouillabaisse: A fragrant and hearty French seafood stew, brimming with fish, shellfish, and herbs. It's like a gentle sea breeze on a warm summer evening in Marseille.
+
+#### Side Dishes:
+
+- Ratatouille: A vibrant French vegetable stew, combining eggplant, zucchini, bell peppers, and tomatoes, gently simmered with herbs. A colorful ode to Provence.
+
+- Polenta con Tartufo Nero: Creamy polenta, infused with the luxurious aroma of black truffles. A dish that's both humble and opulent, much like Italy itself.
+
+#### Desserts:
+
+- Tiramisu: A quintessential Italian dessert, layering coffee-soaked ladyfingers with a luscious blend of mascarpone cheese, eggs, and sugar. A sweet embrace in every bite.
+
+- Crème Brûlée: A silky French custard, crowned with a caramelized sugar crust. It's simplicity and elegance in a ramekin.
+
+#### Drinks:
+- Chianti Classico: A robust Italian red wine, perfect to accompany the risotto or saltimbocca
+- Champagne: No French-themed menu is complete without a glass of sparkling Champagne. Its effervescence and crisp taste make it a delightful pairing with both appetizers and desserts.
+
+- Negroni: An iconic Italian cocktail, blending gin, Campari, and sweet vermouth. Its bittersweet complexity is a perfect palate cleanser between courses or a sophisticated conclusion to the meal.
+
 
 See the [open issues](https://github.com/samuser107/htmlProject/issues) for a full list of proposed features (and known issues).
 
