@@ -74,12 +74,12 @@ Email of Olivier Choquet : olivier.choquet@vinci.be
 We ask you to write the HTML pages of a website presenting the restaurant of your team. Every
 member will write one HTML page of this website and present on this page a part of the restaurant.
 For example, you can present:
-- [ ] The food page of the restaurant.
-- [ ] The drink page of the restaurant
+- [ ] <b> Louis-Nicolas </b> The food page of the restaurant.
+- [ ] <b> Alona </b> The drink page of the restaurant
 - [ ] The contact & schedules page of the restaurant
 - [ ] <b> Moulay </b> : The food delivery page of the restaurant : 
 - [ ] The photo event page of the restaurant
-- [ ] A page who describes kitchen type
+- [ ] <b> Filipe </b> A page who describes kitchen type
 - ….
 <br/>
 
