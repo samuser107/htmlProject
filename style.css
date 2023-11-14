@@ -154,3 +154,7 @@ footer {
     border-top-style: solid;
     border-top-width: 1px;
 }
+
+#moulay_sommaire a {
+    margin-right: 15px;
+}
