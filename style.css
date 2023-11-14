@@ -146,11 +146,15 @@ footer {
     color: #333;
     text-align: center;
     padding: 10px 0;
-    position: absolute;
+    position: relative;
     left:0;
     bottom: 0;
     width: 100%;
     border-top-color: #333;
     border-top-style: solid;
     border-top-width: 1px;
+}
+
+#moulay_sommaire a {
+    margin-right: 15px;
 }
