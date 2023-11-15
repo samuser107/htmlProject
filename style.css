@@ -118,39 +118,89 @@ section {
     }
 }
 
-.menu {
-    /* styles for your menu */
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.3s ease, visibility 0.3s ease;
-}
-
-.menu-item {
-    background: #f4f4f4;
-    margin: 20px 0;
-    padding: 10px;
-    max-width: 100;
-    transition: transform 0.3s ease-in-out; /* Transition effect for the transform property */
-    transform: translateX(-100%); /* Start with the menu off-screen */
-}
-.menu-toggle:checked + .menu-items {
-    transform: translateX(0); /* Move the menu on-screen */
-  }
-
-.menu-item:hover {
-    transform: scale(1.05);
-}
-
 footer {
     /* background: #333; */
     color: #333;
     text-align: center;
     padding: 10px 0;
-    position: absolute;
+    position: relative;
     left:0;
     bottom: 0;
     width: 100%;
     border-top-color: #333;
     border-top-style: solid;
     border-top-width: 1px;
+}
+#Louis-Nicolas-menu {
+    margin: 20px 0;
+}
+
+
+.Louis-Nicolas-price {
+    font-weight: bold;
+}
+
+#Louis-Nicolas-section {
+    /* full width */
+    width: 100%;
+    /* center section */
+    text-align: center;
+}
+
+#Louis-Nicolas-section-menu {
+    /* center section */
+    text-align: center;
+}
+#Louis-Nicolas-section-menu h3 {
+    margin-bottom: 20px;
+    /* h3 underlined */
+    border-bottom: 1px solid #333;
+    display: inline-block;
+}
+#Louis-Nicolas-section-menu-border {
+    border-bottom: 1px solid rgba(51, 51, 51, 0.5);
+    border-bottom-style: dashed;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+}
+
+.Louis-Nicolas-menu-item {
+    margin-bottom: 20px;
+    flex-basis: calc(50% - 10px); /* Subtract margin */
+}
+
+@media screen and (max-width: 800px) {
+    .Louis-Nicolas-menu-item {
+        flex-basis: 100%;
+    }
+}
+
+#Louis-Nicolas-table {
+    /* center table */
+    margin: 0 auto;
+    /* set table width to 80% of page */
+    width: 80%;
+    /* set table border to 0 */
+    border: 0;
+    /* set table border spacing to 0 */
+    border-spacing: 0;
+    /* set table border collapse to collapse */
+    border-collapse: collapse;
+}
+
+#Louis-Nicolas-ul {
+    /* remove default list styles */
+    list-style-type: none;
+    /* center list */
+    margin: 0 auto;
+    /* set list width to 80% of page */
+    width: 50%;
+}
+
+#moulay_sommaire a {
+    margin-right: 15px;
 }
