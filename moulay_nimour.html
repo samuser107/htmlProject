@@ -32,28 +32,67 @@
             <a href="#contact">Contact</a>
         </nav>
 
-        <img src="images\image plats\cuisine-italinne-.jpg.webp" id="image-en-tete">
+        <img src="images\Plats\cuisine-italinne-.jpg.webp" id="moulay_image-en-tete">
 
 
         <div id = moulay_choix_commande>
             <h1> Commandez en ligne !</h1>
-
-            <h2>Plats</h2>
-            <ul>
-                <li>Pizza</li>
-                <li>Burger</li>
-                <li>Pâtes carbonara</li>
-                <li>Sushis</li>
-            </ul>
-
-            <h2>Boissons</h2>
             
-            <h2>Desserts</h2>
-
-            <h2>Acompagnements</h2>
-        
+            <table>
+                <tr>
+                    <th>Menu</th>
+                    <th>Choix</th>
+                </tr>
+                <tr>
+                    <td>Plats</td>
+                    <td>
+                        <ul>
+                            <li>Coq au Vin<input type="number" min="0"></li>
+                            <li>Beef Bourguignon<input type="number" min="0"></li>
+                            <li>Risotto ai Funghi Porcini<input type="number" min="0"></li>
+                            <li>Saltimbocca alla Romana<input type="number" min="0"></li>
+                            <li>Bouillabaisse<input type="number" min="0"></li>
+                        </ul>
+                    </td>
+            
+                    <td>Boissons</td>
+            
+                    <td>
+                        <ul>
+                            <li>Chianti Classico<input type="number" min="0"></li>
+                            <li>Champagne<input type="number" min="0"></li>
+                            <li>Negroni<input type="number" min="0"></li>
+                        </ul>
+                    </td>
+            
+                    <td>Desserts</td>
+                    <td>
+                        <ul>
+                            <li>Tiramisu<input type="number" min="0"></li>
+                            <li>Crème Brûlée<input type="number" min="0"></li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Acompagnements</td>
+                    <td>
+                        <ul>
+                            <li>Ratatouille<input type="number" min="0"></li>
+                            <li>Polenta con Tartufo Nero<input type="number" min="0"></li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
         </div>
 
+        <div id = moulay_adresse_livraison> 
+            <h3>Adresse de livraison</h3>
+                <input type="text" placeholder="Votre adresse">
+                <input type="tel" placeholder="Votre numéro de téléphone">
+                <button type="submit">Passer la commande</button>  
+            
+        </div>
+        
 
 
     </div>
