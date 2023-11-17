@@ -122,17 +122,33 @@
         </section> -->
         <section id="Louis-Nicolas-section-reservation">
             <h2>Make a Reservation</h2>
-            <form>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
+            <form id="Louis-Nicolas-section-reservation-form">
+                <div id="Louis-Nicolas-section-reservation-element">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div id="Louis-Nicolas-section-reservation-element">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div id="Louis-Nicolas-section-reservation-element">
                 <label for="reservation-date">Date and Time:</label>
                 <input type="datetime-local" id="reservation-date" name="reservation-date" required>
-                <input type="submit" value="Reserve">
+                </div>
+                <input type="submit" value="Reserve" id="Louis-Nicolas-submit-button">
             </form>
         </section>
         <section id="Louis-Nicolas-section">
             <h2>Our Location</h2>
-            <p><a href="https://www.google.com/maps/place/La+Bella+Vita">Find us on Google Maps</a></p>
+            <ul id="Louis-Nicolas-ul">
+                <li>
+                    <img src="images/Restaurant-Interior.png" alt="Restaurant Interior" class="responsive">
+                </li>
+                <li>
+                    <p><a id="Louis-Nicolas-link" target="_blank" href="https://www.google.com/maps/place/La+Bella+Vita">Click here to find us on Google Maps</a></p>
+                </li>
+            </ul>
+            
         </section>
         <section id="Louis-Nicolas-section">
             <h2>Opening Hours</h2>

@@ -154,6 +154,25 @@ footer {
         text-align: center;
 }
 
+#Louis-Nicolas-section-reservation-form {
+    /* make each item on a different line */
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    /* center button */
+    justify-content: center;
+    align-items: center;
+}
+#Louis-Nicolas-section-reservation-element{
+    /* padding */
+    padding: 10px;
+}
+
+#Louis-Nicolas-link{
+    color: #333;
+    text-decoration: none;
+}
+
 #Louis-Nicolas-section-menu {
     /* center section */
     text-align: center;
@@ -166,16 +185,18 @@ footer {
 }
 #Louis-Nicolas-section-menu-border {
     border-bottom: 4px dotted rgba(51, 51, 51, 0.5);
-    text-align: center;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 20px;
-
+    justify-content: center;
 }
 
 .Louis-Nicolas-menu-item {
+    max-width: 600px;
     margin-bottom: 20px;
+    margin-right: 5px;
+    margin-left: 5px;
     flex-basis: calc(50% - 10px); /* Subtract margin */
 }
 
@@ -201,8 +222,53 @@ footer {
 #Louis-Nicolas-ul {
     /* remove default list styles */
     list-style-type: none;
+    justify-content: center;
     /* center list */
     margin: 0 auto;
     /* set list width to 80% of page */
     width: 50%;
+    list-style: none;
+    padding: 0;
+}
+
+#Louis-Nicolas-submit-button {
+    background: #333;
+    color: #fff;
+    border: 1px solid #333;
+    border: 0;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border-radius: 5px;
+    /* button height like an text input */
+    height: 30px;
+    align-items: center;
+    text-align: center;
+    padding-top: 8px;
+}
+
+#Louis-Nicolas-submit-button:hover {
+    background: #fff;
+    color: #333;
+    border: 1px solid #333;
+}
+
+#Louis-Nicolas-image-container{
+    justify-content: center;
+    position: relative;
+    width: 100%; /* or any desired width */
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+    /* overflow: hidden; */
+}
+
+img.responsive {
+    /* corner radius */
+    border-radius: 5px;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 30%;
+    max-width: 200px;
+    height: 50%;
+    object-fit: cover;
 }
