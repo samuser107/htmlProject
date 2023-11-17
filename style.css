@@ -155,6 +155,17 @@ footer {
     border-top-width: 1px;
 }
 
-#moulay_sommaire a {
-    margin-right: 15px;
+
+
+#moulay_choix_commande {
+    display: flex;
+    align-items: center;
+}
+
+#moulay_choix_commande ul li{
+    list-style-type: none;
+}
+
+#moulay_input {
+    margin-left: 10px;
 }

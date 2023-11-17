@@ -22,80 +22,111 @@
         </nav>
     </header>
 
+    <img src="images\Plats\cuisine-italinne-.jpg.webp" id="moulay_image-en-tete"> 
 
-    <div>
-        
-        <nav id="moulay_sommaire">
-            <a href="#accueil">Accueil</a>
-            <a href="#services">Services</a>
-            <a href="#a-propos">À propos</a>
-            <a href="#contact">Contact</a>
-        </nav>
-
-        <img src="images\Plats\cuisine-italinne-.jpg.webp" id="moulay_image-en-tete">
+    <div id = moulay_choix_commande>
 
 
-        <div id = moulay_choix_commande>
+        <div>
             <h1> Commandez en ligne !</h1>
             
+            <h2>Plats</h2>
+
+            <table >
+                <tr>
+                    <td>
+                        <ul>
+                            <li>Coq au Vin</li>
+                            <li>Beef Bourguignon</li>
+                            <li>Risotto ai Funghi Porcini</li>
+                            <li>Saltimbocca alla Romana</li>
+                            <li>Bouillabaisse</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li><input type="number" min="0"></li>
+                            <li><input type="number" min="0"></li>
+                            <li><input type="number" min="0"></li>
+                            <li><input type="number" min="0"></li>
+                            <li><input type="number" min="0"></li>
+                        </ul>
+                    </td>
+                </tr> 
+            </table>
+
+            <h2>Boissons</h2>
             <table>
                 <tr>
-                    <th>Menu</th>
-                    <th>Choix</th>
-                </tr>
-                <tr>
-                    <td>Plats</td>
                     <td>
                         <ul>
-                            <li>Coq au Vin<input type="number" min="0"></li>
-                            <li>Beef Bourguignon<input type="number" min="0"></li>
-                            <li>Risotto ai Funghi Porcini<input type="number" min="0"></li>
-                            <li>Saltimbocca alla Romana<input type="number" min="0"></li>
-                            <li>Bouillabaisse<input type="number" min="0"></li>
+                        <li>Chianti Classico</li>
+                        <li>Champagne</li>
+                        <li>Negroni</li>
                         </ul>
                     </td>
-            
-                    <td>Boissons</td>
-            
                     <td>
                         <ul>
-                            <li>Chianti Classico<input type="number" min="0"></li>
-                            <li>Champagne<input type="number" min="0"></li>
-                            <li>Negroni<input type="number" min="0"></li>
-                        </ul>
-                    </td>
-            
-                    <td>Desserts</td>
-                    <td>
-                        <ul>
-                            <li>Tiramisu<input type="number" min="0"></li>
-                            <li>Crème Brûlée<input type="number" min="0"></li>
-                        </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Acompagnements</td>
-                    <td>
-                        <ul>
-                            <li>Ratatouille<input type="number" min="0"></li>
-                            <li>Polenta con Tartufo Nero<input type="number" min="0"></li>
-                        </ul>
+                        <li><input type="number" min="0"></li>
+                        <li><input type="number" min="0"></li>
+                        <li><input type="number" min="0"></li>
+                        </ul> 
                     </td>
                 </tr>
             </table>
+
+            <h2>Desserts</h2>
+            <table>
+                <tr>
+                    <td>
+                        <ul>
+                        <li>Tiramisu</li>
+                        <li>Crème Brûlée</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                        <li><input type="number" min="0"></li>
+                        <li><input type="number" min="0"></li>
+                        </ul> 
+                    </td>
+                </tr>
+            </table>
+
+            <h2>Acompagnements</h2>
+            <table>
+                <tr>
+                    <td>
+                        <ul>
+                        <li>Ratatouille</li>
+                        <li>Polenta con Tartufo Nero</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                        <li><input type="number" min="0"></li>
+                        <li><input type="number" min="0"></li>
+                        </ul> 
+                    </td>
+                </tr>
+            </table>
+
+
         </div>
 
-        <div id = moulay_adresse_livraison> 
-            <h3>Adresse de livraison</h3>
-                <input type="text" placeholder="Votre adresse">
-                <input type="tel" placeholder="Votre numéro de téléphone">
-                <button type="submit">Passer la commande</button>  
-            
-        </div>
+
+
         
 
-
     </div>
+    <div id = moulay_adresse_livraison> 
+                <h3>Adresse de livraison</h3>
+                    <input type="text" placeholder="Votre adresse">
+                    <input type="tel" placeholder="Votre numéro de téléphone">
+                    <button type="submit">Passer la commande</button>  
+                
+            </div>
+
 
     <footer>
         <p>Moulay Nimour</p>
