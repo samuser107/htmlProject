@@ -188,7 +188,7 @@ footer {
 
 /*--------------------------------------------Signature dishes-----------------------------------------------------------*/
 
-#h2-titles{
+h2{
     text-align: center;
     font-family: 'Italianno', cursive;
     font-size: 100px;
@@ -232,12 +232,12 @@ footer {
 #risotto-porcini {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 #risotto-porcini p{
     max-width: 50%;
-    margin-right: 100px;
+    margin-left: 70px;
     
 }
 
@@ -275,15 +275,53 @@ footer {
     max-width: 80%;
     margin-left: 200px;
 }
-#techniques-ingredients a{
-    color: #DAA520;
-    transition: color 0.3s, background-color 0.3;
+
+/*-----------------------------------------------Side Dishes,Drinks & Desserts-------------------------------------------------*/
+
+#filipe-others {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
 }
 
-#techniques-ingredients a:hover {
+
+#filipe-others p {
+    column-count: 3;
+    column-gap: 50px;
+    font-size: 20px;
+    color: #333;
+    text-align: center;
+    max-width: 60%; 
+}
+
+
+/*----------------------------------------------------------CONCLUSION-------------------------------------------------------*/
+
+
+#filipe-conclusion p{
+    font-size: 30px;
+    color: #333;
+    text-align: center;
+    max-width: 75%; 
+    margin-left: 12.5%;
+    margin-top: 50px;
+}
+
+#filipe-conclusion a{
+    color: #DAA520;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+#filipe-conclusion a:hover {
     color: #caca79;
-    
     text-decoration: none; 
     }
 
-/*-------------------------------------------------------------------*/
+#signature-staff-filipe{
+    margin-top: 20px;
+    font-family: "Italianno", cursive;
+    font-weight:bold;
+    font-size: 50px;
+    text-decoration: underline;
+}
