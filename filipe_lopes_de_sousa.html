@@ -38,7 +38,7 @@
             </p>
         </div>
         
-        <h2> Our signature dishes</h2> 
+        <h2 id="signature-dishes-title"> Our signature dishes</h2> 
         
         <div id="signature-dishes">
             <div id="coq-au-vin">
@@ -98,7 +98,7 @@
                 </div>
             </div>
         </div>
-        <h2> Side dishes,drinks and desserts</h2> 
+        <h2 id="side-dishes-title"> Side dishes,drinks and desserts</h2> 
         <div id="filipe-others">
             <p>
                 Side dishes are like delicious sidekicks that complete the main meal. Take "Ratatouille" for example, a colourful celebration of 
@@ -120,9 +120,34 @@
                 To embark on a culinary journey beyond this preview, we invite you to join us in person for a refined dining experience or opt for 
                 the convenience of <a href="moulay_nimour.html">delivery</a>, bringing the opulence of our cuisine to the comfort of your home. We eagerly 
                 anticipate the pleasure of welcoming you, where our chef's passionate artistry awaits your discerning palate.<br>
+                After this experience, don't hesitate to fill in the form below to leave us your feedback. Thank you very much in advance for this.<br><br>
                 <span id="signature-staff-filipe"> Bella Vita Staff </span>
             </p>
         </div>
+
+        <div class="feedback-box">
+            <h2 id="feedback-form-title">Feedback Form</h2>
+            <form action="submit_feedback.php" method="post" class="feedback-form-filipe">
+
+                <label for="favorite-dish">Your favorite dish/The dish you tried :</label>
+                <select id="favorite-dish" name="favorite-dish">
+                    <option value="coq-au-vin">Coq au Vin</option>
+                    <option value="beef-bourguignon">Beef Bourguignon</option>
+                    <option value="risotto-funghi-porcini">Risotto ai Funghi Porcini</option>
+                    <option value="saltimbocca">Saltimbocca alla Romana</option>
+                    <option value="bouillabaisse">Bouillabaisse</option>
+                </select>
+    
+                <label for="dish-comment">Comments on the dish :</label>
+                <textarea id="dish-comment" name="dish-comment" placeholder="Your comment here...."></textarea>
+    
+                <label for="golden-book">Golden book :</label>
+                <textarea id="golden-book" name="golden-book" placeholder="Write your message here..."></textarea>
+    
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+
     </section>
     
     <footer>
