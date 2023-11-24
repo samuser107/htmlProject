@@ -258,6 +258,15 @@ footer {
     height: 400px;
  }
 
+ #btn_reservation {
+    width: 250px;
+    height: 35px;
+    background-color: #838383;
+    border: none;
+    margin-left: 80px;
+    
+ }
+
  .container_contact form {
     padding: 20px;
     background-color: #f0f0f0;
@@ -279,12 +288,12 @@ footer {
     box-sizing: border-box;
 }
 
-#form input[type="submit"]{
-    width: 100px;
+button{
+    width: 250px;
+    height: 35px;
+    background-color: #838383;
+    border: none;
+    margin-left: 30px;
 }
 
-#about {
-    background-color: #f0f0f0;
-    width: 300px;
-}
 
