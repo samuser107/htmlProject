@@ -162,8 +162,8 @@ footer {
 
 
 
-/* FILIPE SECTION */
-/*-------------------------------------------------------Intro--------------------------------------------------------------*/
+/* ----------------------------------------------------FILIPE SECTION ---------------------------------------------------------------------------*/
+/*-----------------------------------------------------------Intro-------------------------------------------------------*/
 #introduction {
     display: flex;
     align-items: center;
@@ -195,7 +195,7 @@ footer {
     color: #caca79; 
     text-decoration: none;
     }
-    
+
 /*--------------------------------------------Signature dishes-----------------------------------------------------------*/
 
 #signature-dishes-title{
@@ -294,7 +294,7 @@ footer {
     margin-top: 50px;
 }
 
-#filipe-others {
+#filipe-rest-of-menu {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -302,7 +302,7 @@ footer {
 }
 
 
-#filipe-others p {
+#filipe-rest-of-menu p {
     column-count: 3;
     column-gap: 50px;
     font-size: 20px;
@@ -404,3 +404,5 @@ footer {
 .feedback-box input:hover {
     background-color: #3b883f;
 }
+
+/*----------------------------------------------------END FILIPE SECTION-------------------------------------------------------------------------*/
