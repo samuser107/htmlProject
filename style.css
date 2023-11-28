@@ -141,20 +141,20 @@ footer {
     font-weight: bold;
 }
 
-#Louis-Nicolas-section {
+.Louis-Nicolas-section {
     /* full width */
     width: 100%;
     /* center section */
     text-align: center;
 }
-#Louis-Nicolas-section-reservation{
+.Louis-Nicolas-section-reservation{
         /* full width */
         width: 100%;
         /* center section */
         text-align: center;
 }
 
-#Louis-Nicolas-section-reservation-form {
+.Louis-Nicolas-section-reservation-form {
     /* make each item on a different line */
     display: flex;
     flex-wrap: wrap;
@@ -163,7 +163,7 @@ footer {
     justify-content: center;
     align-items: center;
 }
-#Louis-Nicolas-section-reservation-element{
+.Louis-Nicolas-section-reservation-element{
     /* padding */
     padding: 10px;
 }
@@ -173,17 +173,17 @@ footer {
     text-decoration: none;
 }
 
-#Louis-Nicolas-section-menu {
+.Louis-Nicolas-section-menu {
     /* center section */
     text-align: center;
 }
-#Louis-Nicolas-section-menu h3 {
+.Louis-Nicolas-section-menu h3 {
     margin-bottom: 20px;
     /* h3 underlined */
     border-bottom: 1px solid #333;
     display: inline-block;
 }
-#Louis-Nicolas-section-menu-border {
+.Louis-Nicolas-section-menu-border {
     border-bottom: 4px dotted rgba(51, 51, 51, 0.5);
     display: flex;
     flex-wrap: wrap;
