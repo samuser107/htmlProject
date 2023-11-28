@@ -409,3 +409,110 @@ footer {
     color: #333;
     text-decoration: none;
 }
+
+
+
+/* centering the title Events*/
+#center-rebecca-cotta{
+    text-align: center;
+    padding: 10px;
+}
+
+/* lowering the text*/
+p.rebecca-cotta{
+    margin-top: 40px;
+}
+h3.rebecca-cotta{
+    margin-top: 40px;
+}
+
+/* text + background for the Monday Jazz Event*/
+.Monday-jazz-rebecca-cotta{
+    margin: 5px;
+    padding: 20px;
+    text-align: center;
+    opacity: 0.8;
+    background-image: url(saxophone.jpg) ;
+    background-position: center;
+    background-size: 100%;
+    width: fit-content;
+    height: 400px;
+    border-radius: 5px;
+    color: #f4f4f4;
+    margin-top: 5px;
+}
+
+/* List */
+div.container-rebecca-cotta{
+    text-align: center;
+}
+
+ul.myUL-rebecca-cotta {
+    display: inline-block;
+    text-align: center;
+}
+
+/* text + background for the Thursday Lunch Event*/
+.Thursday-lunch-rebecca-cotta{
+    margin: 5px;
+    padding: 10px;
+    text-align: center;
+    opacity: 0.8;
+    background-image: url(Lunch.jpg) ;
+    background-position: center;
+    background-size: 100%;
+    width: fit-content;
+    height: 400px;
+    border-radius: 5px;
+    color: #f4f4f4;
+    margin-top: 25px;
+}
+
+/* text + background for the Saturday Night Event*/
+.Saturday-night-rebecca-cotta{
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+    opacity: 0.8;
+    background-image: url(SaturdayNight.jpg) ;
+    background-position: center;
+    background-size: 100%;
+    width: fit-content;
+    height: 400px;
+    border-radius: 5px;
+    color: #f4f4f4;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+
+/* Table */
+#table-rebecca-cotta{
+    text-align: center;
+}
+.table-rebecca-cotta{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 35px;
+    margin-top: 30px ;
+    text-align: center;
+    width: 35%;
+}
+
+/* Form */ 
+.reservation-form-rebecca-cotta{
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 10px;  
+}
+select.rebecca-cotta{
+    margin-bottom: 15px;
+}
+input.rebecca-cotta{
+    margin-bottom: 15px;
+}
+button.rebecca-cotta{
+    margin-bottom: 15px;
+}
+
+
