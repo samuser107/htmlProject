@@ -129,7 +129,7 @@ section {
     background: #f4f4f4;
     margin: 20px 0;
     padding: 10px;
-    max-width: 100;
+    max-width: 100px;
     transition: transform 0.3s ease-in-out; /* Transition effect for the transform property */
     transform: translateX(-100%); /* Start with the menu off-screen */
 }
@@ -236,7 +236,7 @@ footer {
     width: 100px;
 }
 
-#moulay_input {
+.moulay_input {
     /* background: #333; */
     color: #fff;
     border: 1px solid #333;
@@ -252,7 +252,7 @@ footer {
     width: 150px;
 }
 /* change background color of moulay_input when in focus and has text */
-#moulay_input:focus:not(:placeholder-shown) {
+.moulay_input:focus:not(:placeholder-shown) {
     background: #fff;
     color: #333;
     border: 1px solid #333;
