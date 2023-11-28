@@ -251,6 +251,18 @@ footer {
     color: #fff;
 }
 
+#moulay_ul{
+    /* remove default list styles */
+    list-style-type: none;
+    justify-content: center;
+    /* center list */
+    margin: 0 auto;
+    /* set list width to 80% of page */
+    width: 50%;
+    list-style: none;
+    padding: 0;
+}
+
 #moulay_choix_commande{
     top: 0;
     color: #333;
