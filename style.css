@@ -233,9 +233,23 @@ footer {
 }
 
 #Louis-Nicolas-submit-button {
+    /* background: #333; */
+    /* color: #fff; */
+    border: 1px solid #333;
+    border: 0;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border-radius: 5px;
+    /* button height like an text input */
+    align-items: center;
+    text-align: center;
+    padding-top: 8px;
+}
+#Louis-Nicolas-submit-button:hover {
     background: #333;
     color: #fff;
-    border: 1px solid #333;
+}
 
 #moulay_choix_commande{
     top: 0;
@@ -246,12 +260,6 @@ footer {
     position: relative;
     text-align: center;
     width: 100%;
-}
-
-.dotted-line {
-    border-top: 1px dotted #000;
-    width: 100%; /* Assurez-vous que la ligne s'étend sur toute la largeur du td */
-    margin: 20px 0; /* Ajoutez un espace au-dessus et en dessous de la ligne */
 }
 
 #moulay_titre {
@@ -320,7 +328,6 @@ footer {
 
 .moulay_input {
     /* background: #333; */
-    color: #fff;
     border: 1px solid #333;
     /* border: 0; */
     padding: 10px 20px;
@@ -350,18 +357,10 @@ footer {
     transition: all 0.3s ease-in-out;
     border-radius: 5px;
     /* button height like an text input */
-    height: 30px;
+    height: 40px;
     align-items: center;
     text-align: center;
     padding-top: 8px;
-}
-
-#Louis-Nicolas-submit-button:hover {
-    height: 40px;
-    width: 190px;
-    align-items: center;
-    text-align: center;
-    margin-top: 8px;
 }
 
 #moulay-submit-button:hover {
