@@ -156,9 +156,9 @@ footer {
           text-align:center;
           
         }
-#menu-item-alona-mykhailenko{
+.menu-item-alona-mykhailenko {
     width: 95%;
-    flex-basis:calc(50%-10px) ;
+    flex-basis: calc(50% - 10px);
 }
 
 #left-line-alona-mykhailenko {
@@ -177,7 +177,7 @@ footer {
   } 
 
 
-#table-alona-mykhailenko {
+.section-alona-mykhailenko {
     width: 60%;
     margin: 0 auto;
     border-collapse: collapse;
