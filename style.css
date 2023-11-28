@@ -432,7 +432,7 @@ h3.rebecca-cotta{
     padding: 20px;
     text-align: center;
     opacity: 0.8;
-    background-image: url(saxophone.jpg) ;
+    background-image: url("images/saxophone.jpg") ;
     background-position: center;
     background-size: 100%;
     width: fit-content;
@@ -458,7 +458,7 @@ ul.myUL-rebecca-cotta {
     padding: 10px;
     text-align: center;
     opacity: 0.8;
-    background-image: url(Lunch.jpg) ;
+    background-image: url("images/Lunch.jpg") ;
     background-position: center;
     background-size: 100%;
     width: fit-content;
@@ -474,7 +474,7 @@ ul.myUL-rebecca-cotta {
     padding: 5px;
     text-align: center;
     opacity: 0.8;
-    background-image: url(SaturdayNight.jpg) ;
+    background-image: url("images/SaturdayNight.jpg") ;
     background-position: center;
     background-size: 100%;
     width: fit-content;
