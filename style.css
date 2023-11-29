@@ -57,7 +57,7 @@ label[for="menu-toggle"] {
     /* Add any other styles you want for the menu button */
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 800px) {
     header {
         padding: 5px 0; /* Smaller padding for smaller screens */
     }
@@ -119,33 +119,11 @@ section {
     }
 }
 
-.menu {
-    /* styles for your menu */
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.3s ease, visibility 0.3s ease;
-}
-
-.menu-item {
-    background: #f4f4f4;
-    margin: 20px 0;
-    padding: 10px;
-    max-width: 100%;
-    transition: transform 0.3s ease-in-out; /* Transition effect for the transform property */
-    transform: translateX(-100%); /* Start with the menu off-screen */
-}
-.menu-toggle:checked + .menu-items {
-    transform: translateX(0); /* Move the menu on-screen */
-  }
-
-.menu-item:hover {
-    transform: scale(1.05);
-}
-
 footer {
     /* background: #333; */
     color: #333;
     text-align: center;
+    /* keep on the bottom */
     padding: 10px 0;
     position: relative;
     left:0;
@@ -156,6 +134,146 @@ footer {
     border-top-width: 1px;
 }
 
+#Louis-Nicolas-menu {
+    margin: 20px 0;
+}
+
+
+.Louis-Nicolas-price {
+    font-weight: bold;
+}
+
+.Louis-Nicolas-section {
+    /* full width */
+    width: 100%;
+    /* center section */
+    text-align: center;
+}
+.Louis-Nicolas-section-reservation{
+        /* full width */
+        width: 100%;
+        /* center section */
+        text-align: center;
+}
+
+.Louis-Nicolas-section-reservation-form {
+    /* make each item on a different line */
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    /* center button */
+    justify-content: center;
+    align-items: center;
+}
+.Louis-Nicolas-section-reservation-element{
+    /* padding */
+    padding: 10px;
+}
+
+#Louis-Nicolas-link{
+    color: #333;
+    text-decoration: none;
+}
+
+.Louis-Nicolas-section-menu {
+    /* center section */
+    text-align: center;
+}
+.Louis-Nicolas-section-menu h3 {
+    margin-bottom: 20px;
+    /* h3 underlined */
+    border-bottom: 1px solid #333;
+    display: inline-block;
+}
+.Louis-Nicolas-section-menu-border {
+    border-bottom: 4px dotted rgba(51, 51, 51, 0.5);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+.Louis-Nicolas-menu-item {
+    max-width: 600px;
+    margin-bottom: 20px;
+    margin-right: 5px;
+    margin-left: 5px;
+    flex-basis: calc(50% - 10px); /* Subtract margin */
+}
+
+@media screen and (max-width: 800px) {
+    .Louis-Nicolas-menu-item {
+        flex-basis: 100%;
+    }
+}
+
+#Louis-Nicolas-table {
+    /* center table */
+    margin: 0 auto;
+    /* set table width to 80% of page */
+    width: 80%;
+    /* set table border to 0 */
+    border: 0;
+    /* set table border spacing to 0 */
+    border-spacing: 0;
+    /* set table border collapse to collapse */
+    border-collapse: collapse;
+}
+
+#Louis-Nicolas-ul {
+    /* remove default list styles */
+    list-style-type: none;
+    justify-content: center;
+    /* center list */
+    margin: 0 auto;
+    /* set list width to 80% of page */
+    width: 50%;
+    list-style: none;
+    padding: 0;
+}
+
+#Louis-Nicolas-submit-button {
+    /* background: #333; */
+    /* color: #fff; */
+    border: 1px solid #333;
+    border: 0;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border-radius: 5px;
+    /* button height like an text input */
+    align-items: center;
+    text-align: center;
+    padding-top: 8px;
+}
+#Louis-Nicolas-submit-button:hover {
+    background: #333;
+    color: #fff;
+}
+
+#moulay_ul{
+    /* remove default list styles */
+    list-style-type: none;
+    justify-content: center;
+    /* center list */
+    margin: 0 auto;
+    /* set list width to 80% of page */
+    width: 50%;
+    list-style: none;
+    padding: 0;
+}
+
+#moulay_choix_commande{
+    top: 0;
+    color: #333;
+    transition: all 0.5s ease-in-out;
+    margin-top: 10px;
+    padding: 10px 0;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
 #moulay_sommaire a {
     margin-right: 15px;
 }
@@ -406,3 +524,140 @@ footer {
 }
 
 /*----------------------------------------------------END FILIPE SECTION-------------------------------------------------------------------------*/
+
+
+#moulay_titre {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+}
+
+#moulay_titre h1 {
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+
+#moulay_titre img {
+    /* corner radius */
+    border-radius: 5px;
+    position: relative;
+    top: 0;
+    left: 0;
+    /* screen width */
+    width: 100%;
+    max-width: 1000px;
+    height: 100px;
+    object-fit: cover;
+
+}
+
+#moulay_choix_commande ul li{
+    list-style-type: none;
+}
+
+.moulay_table{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    /* no space between elements */
+    border-collapse: separate;
+
+    border-spacing: 5px;
+    border-spacing: 1vw;
+    border-spacing: 2em;
+    /* table border */
+    border: 1px dotted #333;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.moulay_table td {
+    padding: 0 50px; /* Ajoute un espace de 20px à gauche et à droite de chaque cellule */
+}
+.moulay_table td ul {
+    width: 200px;
+}
+.moulay_table td ul li {
+    text-align: left;
+}
+.moulay_table td ul li input {
+    width: 100px;
+}
+
+.moulay_input {
+    /* background: #333; */
+    border: 1px solid #333;
+    /* border: 0; */
+    padding: 10px 20px;
+    /* cursor: pointer; */
+    transition: all 0.3s ease-in-out;
+    border-radius: 5px;
+    align-items: center;
+    text-align: center;
+    padding-top: 8px;
+    height: 20px;
+    width: 150px;
+}
+/* change background color of moulay_input when in focus and has text */
+.moulay_input:focus:not(:placeholder-shown) {
+    background: #fff;
+    color: #333;
+    border: 1px solid #333;
+}
+
+#moulay-submit-button {
+    /* background: #333; */
+    /* color: #fff; */
+    border: 1px solid #333;
+    border: 0;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border-radius: 5px;
+    /* button height like an text input */
+    height: 40px;
+    align-items: center;
+    text-align: center;
+    padding-top: 8px;
+}
+
+#moulay-submit-button:hover {
+    background: #fff;
+    color: #333;
+    border: 1px solid #333;
+}
+#Louis-Nicolas-image-container{
+    justify-content: center;
+    position: relative;
+    width: 100%; /* or any desired width */
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+    /* overflow: hidden; */
+}
+
+#Louis-Nicolas-Image-Responsive {
+    /* corner radius */
+    border-radius: 5px;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 30%;
+    max-width: 200px;
+    height: 50%;
+    object-fit: cover;
+  }
+#moulay_adresse_livraison{
+    margin-left: 45px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#moulay_link{
+    color: #333;
+    text-decoration: none;
+}
