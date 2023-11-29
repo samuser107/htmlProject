@@ -1,0 +1,232 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap');
+
+/* Reset some default styles */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply a font throughout the page */
+body {
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #fff;
+    padding: 0 20px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    color: #333;
+    transition: all 0.5s ease-in-out;
+    margin-top: 10px;
+    padding: 10px 0;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    border-bottom-color: #333;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+/* Hide the checkbox and style the label as a menu button */
+#menu-toggle {
+    display: none;
+}
+
+label[for="menu-toggle"] {
+    display: none;
+    cursor: pointer;
+    /* Add any other styles you want for the menu button */
+}
+
+@media screen and (max-width: 500px) {
+    header {
+        padding: 5px 0; /* Smaller padding for smaller screens */
+    }
+    nav {
+        display: none;
+    }
+
+    label[for="menu-toggle"] {
+        display: block;
+    }
+
+    nav ul li {
+        padding-top: 5px;
+        display: block; /* Stack the nav items vertically */
+        margin-right: 0; /* Remove the right margin */
+    }
+    .menu-toggle:checked + .menu-content {
+        /* Apply your styles for when the menu is toggled */
+        transition: all 0.3s ease-in-out;
+      }
+}
+/* Show the menu when the checkbox is checked */
+#menu-toggle:checked ~ nav {
+    display: block;
+    transition: all 0.3s ease-in-out;
+}
+/* Use the :checked pseudo-class to change the menu when the checkbox is checked */
+#menu-toggle:checked + .menu {
+    opacity: 1;
+    visibility: visible;
+}
+
+nav ul li a {
+    color: #000;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+    white-space: nowrap; /* Add this line */    
+}
+
+nav ul li a[href="#"] {
+    color: #838383;
+}
+
+nav ul li a:hover {
+    color: #838383;
+}
+
+section {
+    padding: 20px 0;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease-in-out forwards;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.menu-toggle:checked + .menu-items {
+    transform: translateX(0); /* Move the menu on-screen */
+  }
+
+footer {
+    /* background: #333; */
+    color: #333;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    left:0;
+    bottom: 0;
+    width: 100%;
+    border-top-color: #333;
+    border-top-style: solid;
+    border-top-width: 1px;
+}
+
+
+#center-alona-mykhailenko{
+  text-align:center;
+}
+
+ .menu-container-alona-mykhailenko {
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            margin: 10px;
+            padding: 20px;
+            text-align: center;
+        }
+
+  #menu-column-alona-mykhailenko {
+            flex: 1;
+            padding: 20px;
+          text-align:center;
+          
+        }
+.menu-item-alona-mykhailenko {
+    width: 95%;
+    flex-basis: calc(50% - 10px);
+}
+
+#left-line-alona-mykhailenko {
+  border-top: 3.5px dotted rgb(51, 51, 51,0.5);
+  width:95%;
+  padding-right: 20px;
+  
+  
+  }
+
+#right-line-alona-mykhailenko {
+  border-top: 3.5px dotted rgb(51, 51, 51,0.5);
+  width:95%;
+  padding-left: 20px;
+  
+  } 
+
+
+.section-alona-mykhailenko {
+    width: 60%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    text-align: center;
+    
+}
+
+@media screen and (max-width: 800px) {
+    .menu-item{
+        flex-basis: 100%;
+    }
+}
+#reservation-form-alona-mykhailenko {
+    
+    padding: 20px;
+    text-align: center;
+}
+
+#big-font-alona-mykhailenko{
+    font-size: 50px;
+}
+
+
+
+.container-for-photo-alona-mykhailenko {
+    display:inline-flex;
+    text-align: center;
+    align-items: center;
+    
+  }
+
+  .container-for-photo-alona-mykhailenko img {
+    margin-left: 10px; 
+  }
+
+  .resizable-image-alona-mykhailenko {
+    width: 50px; /* Set the initial width of the image */
+    height: auto; /* Maintain the aspect ratio */
+    border-radius: 50%;
+    transition: width 0.5s; /* Add a smooth transition effect */
+    vertical-align: middle; /* Align the image vertically in the middle */
+}
+
+/* Hover effect */
+.resizable-image-alona-mykhailenko:hover {
+    width: 110px; /* Set the width when hovering over the image */
+}
+ #link-alona-mykhailenko{
+    color:#333;
+ }
+
+
