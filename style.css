@@ -164,7 +164,7 @@ footer {
 
 /* ----------------------------------------------------FILIPE SECTION ---------------------------------------------------------------------------*/
 /*-----------------------------------------------------------Intro-------------------------------------------------------*/
-#introduction {
+#filipe-introduction {
     display: flex;
     align-items: center;
     margin-left: 5%;
@@ -178,7 +178,7 @@ footer {
     border-radius: 50%  
 }
 
-#introduction p {
+#filipe-introduction p {
     font-size: 20px;
     color: #333;
     margin-left: 10%; 
@@ -186,12 +186,12 @@ footer {
     max-width: 50%; 
 }
 
-#introduction a {
+#filipe-introduction a {
     color: #DAA520; 
     transition: color 0.3s, background-color 0.3s;
   }
 
-#introduction a:hover {
+#filipe-introduction a:hover {
     color: #caca79; 
     text-decoration: none;
     }
@@ -348,7 +348,7 @@ footer {
 /*----------------------------------------------------FEEDBACK FORM--------------------------------------------------------*/
 
 
-.feedback-box {
+.filipe-feedback-box {
     background-color: #fff;
     padding: 12px;
     padding-bottom: 40px;
@@ -376,11 +376,11 @@ footer {
     
 }
 
-.feedback-box label {
+.filipe-feedback-box label {
     margin-bottom: 10px;
 }
 
-.feedback-box select, textarea {
+.filipe-feedback-box select, textarea {
     margin-bottom: 20px;
     padding: 8px;
     border: 1px solid #ccc;
@@ -388,11 +388,11 @@ footer {
     resize: none;
 }
 
-.feedback-box textarea{
+.filipe-feedback-box textarea{
     height: 150px;
 }
 
-.feedback-box input{
+.filipe-feedback-box input{
     padding: 10px;
     background-color: #4caf50;
     color: #fff;
@@ -401,7 +401,7 @@ footer {
     cursor: pointer;
 }
 
-.feedback-box input:hover {
+.filipe-feedback-box input:hover {
     background-color: #3b883f;
 }
 
