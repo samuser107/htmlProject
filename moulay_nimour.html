@@ -1,65 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Restaurant Page</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
 <body>
     <header>
-        <h1>La Bella Vita</h1>
-        <input type="checkbox" id="menu-toggle" />
+        <h1><a href="index.html">La Bella Vita</a></h1>
+        <input type="checkbox" id="menu-toggle">
         <label for="menu-toggle">Menu</label>
         <nav>
             <ul>
-                <li><a href="louis-nicolas_longheval.html" >Louis-Nicolas Longheval</a></li>
+                <li><a href="louis-nicolas_longheval.html">Louis-Nicolas Longheval</a></li>
                 <li><a href="alona_mykhailenko.html">Alona Mykhailenko</a></li>
-                <li><a href="filipe_lopes.html">Filipe Lopez</a></li>
+                <li><a href="filipe_lopes_de_sousa.html">Filipe Lopes De Sousa</a></li>
                 <li><a href="#">Moulay Nimour</a></li>
                 <li><a href="rebecca_cotta.html">Rebecca Cotta</a></li>
+                <li><a href="reda_khalil.html">Reda Khalil</a></li>
             </ul>
         </nav>
     </header>
 
+    <!-- Section de commande en ligne -->
+    <section>
+        <div id="moulay_choix_commande">
+            <div id="moulay_titre">
+                <img src="images/Plats/plate.png" id="moulay_image-en-tete" alt="Plats">
+                <h2>Commande en ligne</h2>
+            </div>
 
-    <div>
-        
-        <nav id="moulay_sommaire">
-            <a href="#accueil">Accueil</a>
-            <a href="#services">Services</a>
-            <a href="#a-propos">À propos</a>
-            <a href="#contact">Contact</a>
-        </nav>
+            <form>
+                <h2>Plats</h2>
+                <table class="moulay_table">
+                    <tr>
+                        <td>
+                            <ul>
+                                <li>Coq au Vin</li>
+                                <li>Beef Bourguignon</li>
+                                <li>Risotto ai Funghi Porcini</li>
+                                <li>Saltimbocca alla Romana</li>
+                                <li>Bouillabaisse</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li><input type="number" min="0"> €30/dish</li>
+                                <li><input type="number" min="0"> €35/dish</li>
+                                <li><input type="number" min="0"> €25/dish</li>
+                                <li><input type="number" min="0"> €32/dish</li>
+                                <li><input type="number" min="0"> €40/dish</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
 
-        <img src="images\image plats\cuisine-italinne-.jpg.webp" id="image-en-tete">
+                <h2>Boissons</h2>
+                <table class="moulay_table">
+                    <tr>
+                        <td>
+                            <ul>
+                                <li>Chianti Classico</li>
+                                <li>Champagne</li>
+                                <li>Negroni</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li><input type="number" min="0"> €16/glass</li>
+                                <li><input type="number" min="0"> €15/glass</li>
+                                <li><input type="number" min="0"> €14/glass</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
 
+                <h2>Desserts</h2>
+                <table class="moulay_table">
+                    <tr>
+                        <td>
+                            <ul>
+                                <li>Tiramisu</li>
+                                <li>Crème Brûlée</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li><input type="number" min="0"> €14/dish</li>
+                                <li><input type="number" min="0"> €14€/dish</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
 
-        <div id = moulay_choix_commande>
-            <h1> Commandez en ligne !</h1>
+                <h2>Acompagnements</h2>
+                <table class="moulay_table">
+                    <tr>
+                        <td>
+                            <ul>
+                                <li>Ratatouille</li>
+                                <li>Polenta con Tartufo Nero</li>
+                            </ul>
 
-            <h2>Plats</h2>
-            <ul>
-                <li>Pizza</li>
-                <li>Burger</li>
-                <li>Pâtes carbonara</li>
-                <li>Sushis</li>
+                        </td>
+                        <td>
+                            <ul>
+                                <li><input type="number" min="0"> €17/dish</li>
+                                <li><input type="number" min="0"> €20/dish</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+
+                <h3>Adresse de livraison</h3>
+                <div id="moulay_adresse_livraison">
+                    <input class="moulay_input" type="text" placeholder="Votre adresse" required>
+                    <input class="moulay_input" type="tel" placeholder="Votre numéro de téléphone" required>
+                    <button id="moulay-submit-button" type="submit">Passer la commande</button>
+                </div>
+            </form>
+            <h2>Find Us</h2>
+            <ul id="moulay_ul">
+                <li>
+                    <img src="images/Restaurant-Interior.png" alt="Restaurant Interior"
+                        id="Louis-Nicolas-Image-Responsive">
+                </li>
+                <li>
+                    <p><a id="moulay_link" target="_blank" href="https://www.google.com/maps/place/La+Bella+Vita">Click
+                            here to find us on Google Maps</a></p>
+                </li>
             </ul>
-
-            <h2>Boissons</h2>
-            
-            <h2>Desserts</h2>
-
-            <h2>Acompagnements</h2>
-        
         </div>
-
-
-
-    </div>
+    </section>
 
     <footer>
-        <p>Moulay Nimour</p>
+        <p>Moulay Nimour, Louis-Nicolas Longheval, Alona Mykhailenko, Filipe Lopez, Rebecca Cotta and Reda Khalil</p>
     </footer>
 </body>
+
 </html>
