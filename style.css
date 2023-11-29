@@ -1,81 +1,38 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&family=Italianno&display=swap');
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap');
 
-:root {
-    --main-text-color: #333;
-    --link-hover-color: rgb(131, 131, 131);
-    --font-family-main: 'Raleway', sans-serif;
-    --font-family-accent: 'Italianno', cursive;
-    --background-default: #fff;
-    --background-header: rgba(255, 255, 255, 0.5);
-    --background-form: #f0f0f0;
-}
-
-@media (prefers-color-scheme: dark) {
-    :root {
-        --background-default: rgb(26, 26, 26);
-        --main-text-color: #f0f0f0;
-        --link-hover-color: #c0c0c0;
-        --background-header: rgba(26, 26, 26, 0.5);
-        --background-form: #333;
-    }
-
-    body {
-        background: var(--background-default);
-        color: var(--main-text-color);
-    }
-
-    /* Update other elements as needed for the dark theme */
-    header {
-        background: rgba(0, 0, 0, 0.5);
-        /* Example: Darker header background */
-    }
-
-    /* Continue to define dark theme styles for other elements... */
-}
-
-body,
-h1,
-h2,
-h3,
-p {
+/* Reset some default styles */
+body, h1, h2, h3, p {
     margin: 0;
     padding: 0;
 }
 
+/* Apply a font throughout the page */
 body {
-    font-family: var(--font-family-main);
+    font-family: 'Raleway', sans-serif;
     line-height: 1.6;
-    color: var(--main-text-color);
-    background: var(--background-default);
+    color: #333;
+    background: #fff;
+    padding: 0 20px;
 }
 
 header {
     position: fixed;
     top: 0;
-    color: var(--main-text-color);
+    color: #333;
     transition: all 0.5s ease-in-out;
+    margin-top: 10px;
     padding: 10px 0;
+    position: relative;
     text-align: center;
     width: 100%;
-    border-bottom: 1px solid var(--main-text-color);
-    background: var(--background-header);
-    backdrop-filter: blur(10px);
-    z-index: 10;
+    border-bottom-color: #333;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
 }
 
-header h1 a {
-    color: var(--main-text-color);
-    text-decoration: none;
-    transition: color 0.3s ease-in-out;
-    white-space: nowrap;
-}
-
-
-header h1 a[href="#"],
-nav ul li a[href="#"],
-nav ul li a:hover,
-header h1 a:hover {
-    color: var(--link-hover-color);
+header h1 {
+    margin: 0;
 }
 
 nav ul {
@@ -88,6 +45,7 @@ nav ul li {
     margin-right: 20px;
 }
 
+/* Hide the checkbox and style the label as a menu button */
 #menu-toggle {
     display: none;
 }
@@ -95,68 +53,58 @@ nav ul li {
 label[for="menu-toggle"] {
     display: none;
     cursor: pointer;
+    /* Add any other styles you want for the menu button */
 }
 
-
-/* Consolidated Media Query for max-width 800px */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 500px) {
     header {
-        padding: 5px 0;
+        padding: 5px 0; /* Smaller padding for smaller screens */
     }
-
-    nav,
-    nav ul li,
-    .menu-toggle:checked+.menu-content {
-        transition: all 0.3s ease-in-out;
-    }
-
     nav {
         display: none;
     }
 
     label[for="menu-toggle"] {
         display: block;
-        cursor: pointer;
     }
 
     nav ul li {
         padding-top: 5px;
-        display: block;
-        margin-right: 0;
+        display: block; /* Stack the nav items vertically */
+        margin-right: 0; /* Remove the right margin */
     }
-
-    section {
-        margin-top: 50px;
-    }
+    .menu-toggle:checked + .menu-content {
+        /* Apply your styles for when the menu is toggled */
+        transition: all 0.3s ease-in-out;
+      }
 }
-
-#menu-toggle:checked~nav {
+/* Show the menu when the checkbox is checked */
+#menu-toggle:checked ~ nav {
     display: block;
-    transition: height 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
-
-#menu-toggle:checked+.menu {
+/* Use the :checked pseudo-class to change the menu when the checkbox is checked */
+#menu-toggle:checked + .menu {
     opacity: 1;
     visibility: visible;
 }
 
 nav ul li a {
-    color: var(--main-text-color);
+    color: #000;
     text-decoration: none;
     transition: color 0.3s ease-in-out;
-    white-space: nowrap;
+    white-space: nowrap; /* Add this line */    
 }
 
 nav ul li a[href="#"] {
-    color: var(--link-hover-color);
+    color: #838383;
 }
 
 nav ul li a:hover {
-    color: var(--link-hover-color);
+    color: #838383;
 }
 
 section {
-    margin-top: 125px;
     padding: 20px 0;
     opacity: 0;
     transform: translateY(20px);
@@ -170,846 +118,63 @@ section {
     }
 }
 
-.menu-toggle:checked+.menu-items {
-    transform: translateX(0);
-    /* Move the menu on-screen */
-}
+.menu-toggle:checked + .menu-items {
+    transform: translateX(0); /* Move the menu on-screen */
+  }
 
 footer {
     /* background: #333; */
-    color: var(--main-text-color);
+    color: #333;
     text-align: center;
-    /* keep on the bottom */
     padding: 10px 0;
     position: relative;
-    left: 0;
+    left:0;
     bottom: 0;
     width: 100%;
-    border-top-color: var(--main-text-color);
+    border-top-color: #333;
     border-top-style: solid;
     border-top-width: 1px;
 }
 
-footer p {
-    padding-left: 5%;
-    padding-right: 5%;
-}
-
-#Louis-Nicolas-menu {
-    margin: 20px 0;
-}
-
-
-.Louis-Nicolas-price {
-    font-weight: bold;
-}
-
-.Louis-Nicolas-section {
-    /* full width */
-    width: 100%;
-    margin-top: 0px;
-    /* center section */
-    text-align: center;
-}
-
-.Louis-Nicolas-section-reservation {
-    /* full width */
-    width: 100%;
-    margin-top: 0px;
-    /* center section */
-    text-align: center;
-}
-
-.Louis-Nicolas-section-reservation-form {
-    /* make each item on a different line */
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
-    /* center button */
-    justify-content: center;
-    align-items: center;
-}
-
-.Louis-Nicolas-section-reservation-element {
-    /* padding */
-    padding: 10px;
-}
-
-#Louis-Nicolas-link {
-    color: var(--main-text-color);
-    text-decoration: none;
-}
-
-.Louis-Nicolas-section-menu {
-    /* center section */
-    text-align: center;
-}
-
-.Louis-Nicolas-section-menu h3 {
-    font-family: 'Italianno', cursive;
-    font-size: 4rem;
-    margin-bottom: 20px;
-    /* h3 underlined */
-    border-bottom: 1px solid #333;
-    display: inline-block;
-}
-
-.Louis-Nicolas-section-menu-border {
-    border-bottom: 4px dotted rgba(51, 51, 51, 0.5);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-bottom: 20px;
-    justify-content: center;
-}
-
-.Louis-Nicolas-menu-item {
-    max-width: 600px;
-    margin-bottom: 20px;
-    margin-right: 5px;
-    margin-left: 5px;
-    flex-basis: calc(50% - 10px);
-    /* Subtract margin */
-}
-
-@media screen and (max-width: 800px) {
-    .Louis-Nicolas-menu-item {
-        flex-basis: 100%;
-    }
-}
-
-#Louis-Nicolas-table {
-    /* center table */
-    margin: 0 auto;
-    /* set table width to 80% of page */
-    width: 80%;
-    /* set table border to 0 */
-    border: 0;
-    /* set table border spacing to 0 */
-    border-spacing: 0;
-    /* set table border collapse to collapse */
-    border-collapse: collapse;
-}
-
-#Louis-Nicolas-ul {
-    /* remove default list styles */
-    list-style-type: none;
-    justify-content: center;
-    /* center list */
-    margin: 0 auto;
-    /* set list width to 80% of page */
-    width: 50%;
-    list-style: none;
-    padding: 0;
-}
-
-#Louis-Nicolas-submit-button {
-    /* background: #333; */
-    /* color: #fff; */
-    border: 1px solid #333;
-    border: 0;
-    padding: 10px 20px;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-    border-radius: 5px;
-    /* button height like an text input */
-    align-items: center;
-    text-align: center;
-    padding-top: 8px;
-}
-
-#Louis-Nicolas-submit-button:hover {
-    background: var(--main-text-color);
-    color: var(--background-default);
-}
-
-#moulay_ul {
-    /* remove default list styles */
-    list-style-type: none;
-    justify-content: center;
-    /* center list */
-    margin: 0 auto;
-    /* set list width to 80% of page */
-    width: 50%;
-    list-style: none;
-    padding: 0;
-}
-
-#moulay_choix_commande {
-    top: 0;
-    color: var(--main-text-color);
-    transition: all 0.5s ease-in-out;
-    margin-top: 10px;
-    padding: 10px 0;
-    position: relative;
-    text-align: center;
-    width: 100%;
-}
-
-#moulay_sommaire a {
-    margin-right: 15px;
-}
-
-
-/* ----------------------------------------------------FILIPE SECTION ---------------------------------------------------------------------------*/
-/*-----------------------------------------------------------Intro-------------------------------------------------------*/
-#filipe-introduction {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    max-width: 1000px;
-    padding-top: 50px;
-}
-
-.chef-image {
-    border-radius: 50%;
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 20%;
-    max-width: 1000px;
-    height: 20%;
-    object-fit: cover;
-}
-
-#filipe-introduction p {
-    font-size: 20px;
-    color: var(--main-text-color);
-    margin-left: 10%;
-    margin-right: 10%;
-    text-align: center;
-    max-width: 600px;
-    min-width: 200px;
-}
-
-#filipe-introduction a {
-    color: #DAA520;
-    transition: color 0.3s, background-color 0.3s;
-}
-
-#filipe-introduction a:hover {
-    color: #caca79;
-    text-decoration: none;
-}
-
-.filipe-image {
-    border-radius: 5px;
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 30%;
-    max-width: 1000px;
-    height: 50%;
-    object-fit: cover;
-}
-
-#filipe-main-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-}
-
-/*--------------------------------------------Signature dishes-----------------------------------------------------------*/
-
-#signature-dishes {
-    width: 100%;
-    max-width: 1000px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-}
-
-#signature-dishes-title {
-    text-align: center;
-    font-family: 'Italianno', cursive;
-    font-size: 100px;
-    margin-top: 50px;
-}
-
-#signature-dishes p {
-    font-size: 20px;
-    color: var(--main-text-color);
-    text-align: center;
-}
-
-#signature-dishes strong {
-    font-size: 30px
-}
-
-/*------------------------Coq-au-Vin----------------------------*/
-#coq-au-vin {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-#coq-au-vin p {
-    max-width: 50%;
-}
-
-
-/*---------------------Risotto Porcini--------------------------*/
-
-#risotto-porcini {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: 20px;
-}
-
-#risotto-porcini p {
-    max-width: 50%;
-    margin-left: 2.5%;
-
-}
-
-
-/*-------------------Bottom Signature Dishes---------------------*/
-
-.filipe-table {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 50px;
-    margin-bottom: 20px;
-    margin-left: 2%;
-}
-
-.filipe-table th,
-.filipe-table td {
-    padding: 12px;
-    text-align: left;
-    border-bottom: 1px solid #ddd;
-}
-
-.filipe-table th {
-    background-color: var(--background-default);
-}
-
-#techniques-ingredients p {
-    max-width: 80%;
-    margin-left: 10%;
-    padding-top: 20px;
-}
-
-#bottom-signature {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-}
-
-/*-----------------------------------------------Side Dishes,Drinks & Desserts-------------------------------------------------*/
-#side-dishes-title {
-    text-align: center;
-    font-family: 'Italianno', cursive;
-    font-size: 100px;
-    margin-top: 50px;
-}
-
-#filipe-rest-of-menu {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-left: 10%;
-    margin-right: 10%;
-    max-width: 1000px;
-}
-
-
-#filipe-rest-of-menu p {
-    column-count: 3;
-    column-gap: 50px;
-    font-size: 20px;
-    color: var(--main-text-color);
-    text-align: center;
-    max-width: 1000px;
-}
-
-@media screen and (max-width: 800px) {
-    #filipe-rest-of-menu p {
-        column-count: 1;
-    }
-
-}
-
-
-/*----------------------------------------------------------CONCLUSION-------------------------------------------------------*/
-
-
-#filipe-conclusion p {
-    font-size: 30px;
-    color: var(--main-text-color);
-    text-align: center;
-    max-width: 1000px;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 50px;
-}
-
-#filipe-conclusion a {
-    color: #DAA520;
-    transition: color 0.3s, background-color 0.3s;
-}
-
-#filipe-conclusion a:hover {
-    color: #caca79;
-    text-decoration: none;
-}
-
-#signature-staff-filipe {
-    margin-top: 20px;
-    font-family: "Italianno", cursive;
-    font-weight: bold;
-    font-size: 50px;
-    text-decoration: underline;
-}
-
-
-
-
-/*----------------------------------------------------FEEDBACK FORM--------------------------------------------------------*/
-
-
-.filipe-feedback-box {
-    /* create error */
-
-    background-color: var(--background-form);
-    width: 50%;
-    padding: 12px;
-    padding-bottom: 40px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.501);
-    margin: 0 auto;
-    margin-top: 75px;
-    margin-bottom: 75px;
-
-}
-
-#feedback-form-title {
-    text-align: center;
-    font-family: 'Italianno', cursive;
-    font-size: 50px;
-    margin-top: 50px;
-}
-
-.feedback-form-filipe {
-    display: flex;
-    flex-direction: column;
-    max-width: 100%;
-    margin: 0 auto;
-
-}
-
-.filipe-feedback-box label {
-    margin-bottom: 10px;
-}
-
-.filipe-feedback-box select,
-textarea {
-    margin-bottom: 20px;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    resize: none;
-}
-
-.filipe-feedback-box textarea {
-    height: 150px;
-}
-
-.filipe-feedback-box input {
-    padding: 10px;
-    background-color: #4caf50;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-.filipe-feedback-box input:hover {
-    background-color: #3b883f;
-}
-
-/*----------------------------------------------------END FILIPE SECTION-------------------------------------------------------------------------*/
-
-
-#moulay_titre {
-    font-family: 'Italianno', cursive;
-    font-size: 3rem;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    width: 100%;
-}
-
-#moulay_titre h1 {
-    padding-left: 10px;
-    padding-bottom: 10px;
-}
-
-
-#moulay_titre img {
-    /* corner radius */
-    border-radius: 5px;
-    position: relative;
-    top: 0;
-    left: 0;
-    /* screen width */
-    width: 100%;
-    max-width: 1000px;
-    height: 100px;
-    object-fit: cover;
-
-}
-
-#moulay_choix_commande ul li {
-    list-style-type: none;
-}
-
-.moulay_table {
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    /* no space between elements */
-    border-collapse: separate;
-
-    border-spacing: 5px;
-    border-spacing: 1vw;
-    border-spacing: 2em;
-    /* table border */
-    border: 1px dotted #333;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    width: 100%;
-    max-width: 1000px;
-}
-
-.moulay_table td {
-    padding: 0 50px;
-    /* Ajoute un espace de 20px à gauche et à droite de chaque cellule */
-}
-
-.moulay_table td ul {
-    width: 200px;
-}
-
-.moulay_table td ul li {
-    text-align: left;
-}
-
-.moulay_table td ul li input {
-    width: 100px;
-}
-
-.moulay_input {
-    /* background: #333; */
-    border: 1px solid var(--main-text-color);
-    /* border: 0; */
-    padding: 10px 20px;
-    /* cursor: pointer; */
-    transition: all 0.3s ease-in-out;
-    border-radius: 5px;
-    align-items: center;
-    text-align: center;
-    padding-top: 8px;
-    height: 20px;
-    width: 150px;
-}
-
-/* change background color of moulay_input when in focus and has text */
-.moulay_input:focus:not(:placeholder-shown) {
-    background: var(--background-default);
-    color: var(--main-text-color);
-    border: 1px solid #333;
-}
-
-#moulay-submit-button {
-    /* background: #333; */
-    /* color: #fff; */
-    border: 1px solid #333;
-    border: 0;
-    padding: 10px 20px;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-    border-radius: 5px;
-    /* button height like an text input */
-    height: 40px;
-    align-items: center;
-    text-align: center;
-    padding-top: 8px;
-}
-
-#moulay-submit-button:hover {
-    background: var(--background-default);
-    color: var(--main-text-color);
-    border: 1px solid #333;
-}
-
-#Louis-Nicolas-image-container {
-    justify-content: center;
-    position: relative;
-    width: 100%;
-    /* or any desired width */
-    padding-top: 56.25%;
-    /* 16:9 Aspect Ratio */
-    /* overflow: hidden; */
-}
-
-#Louis-Nicolas-Image-Responsive {
-    /* corner radius */
-    border-radius: 5px;
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 30%;
-    max-width: 200px;
-    height: 50%;
-    object-fit: cover;
-}
-
-#moulay_adresse_livraison {
-    margin-left: 45px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-#moulay_link {
-    color: var(--main-text-color);
-    text-decoration: none;
-}
-
-
-#center {
-    text-align: center;
-}
-
-.menu-container-alona-mykhailenko {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    margin: 10px;
-    padding: 20px;
-    text-align: center;
-}
-
-#menu-column-alona-mykhailenko {
-    flex: 1;
-    padding: 20px;
-    text-align: center;
-
-}
-
-#menu-item-alona-mykhailenko {
-    width: 95%;
-    /* flex-basis:calc(50%-10px); */
-    flex-basis: calc(50% - 10px);
-    /* Subtract margin */
-}
-
-.vertical-line-alona {
-    border-left: 4px dotted var(--main-text-color);
-    height: 900px;
-    margin: 0 20px;
-}
-
-#left-line-alona-mykhailenko {
-    border-top: 3.5px dotted var(--main-text-color);
-    width: 95%;
-    padding-right: 20px;
-}
-
-#right-line-alona-mykhailenko {
-    border-top: 3.5px dotted var(--main-text-color);
-    width: 95%;
-    padding-left: 20px;
-}
-
-
-#table-alona-mykhailenko {
-    width: 60%;
-    margin: 0 auto;
-    border-collapse: collapse;
-    text-align: center;
-
-}
-
-@media screen and (max-width: 800px) {
-    .menu-item {
-        flex-basis: 100%;
-    }
-}
-
-#reservation-form-alona-mykhailenko {
-
-    padding: 20px;
-    text-align: center;
-}
-
-#big-font-alona-mykhailenko {
-    font-size: 50px;
-}
-
-/* Style for the image */
-
-.container-for-photo {
-    display: inline-flex;
-    text-align: center;
-    align-items: center;
-
-}
-
-.container-for-photo img {
-    margin-left: 10px;
-    /* Adjust the margin as needed */
-}
-
-.resizable-image {
-    width: 50px;
-    /* Set the initial width of the image */
-    height: auto;
-    /* Maintain the aspect ratio */
-    border-radius: 50%;
-    transition: width 0.5s;
-    /* Add a smooth transition effect */
-    vertical-align: middle;
-    /* Align the image vertically in the middle */
-}
-
-/* Hover effect */
-.resizable-image:hover {
-    width: 110px;
-    /* Set the width when hovering over the image */
-}
-
-#link {
-    color: var(--main-text-color);
-}
-
-
-/* Reda's CSS for contact page */
-
-.container_contact {
-    max-width: 800px;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    flex-direction: column;
-}
-
-#container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    min-height: calc(100vh - 210px);
-}
-
-#container h2 {
-    font-family: 'Italianno', cursive;
-    font-size: 3rem;
-}
-
-#container_coordinates {
-    color: black;
-    background-color: #f0f0f0;
-    height: 400px;
-    width: 300px;
-    padding: 20px;
-    border-radius: 5px;
-}
-
-#btn_reservation {
-    width: 250px;
-    height: 35px;
-    background-color: #838383;
-    border: none;
-
-}
-
-.container_contact form {
-    padding: 20px;
-    background-color: #f0f0f0;
-    border-radius: 5px;
-    height: 400px;
-    width: 300px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-}
-
-.container_contact input[type="text"],
-.container_contact input[type="email"],
-.container_contact textarea {
-    margin-bottom: 10px;
-    padding: 8px;
-    border-radius: 3px;
-    border: 1px solid #ccc;
-    width: 100%;
-    box-sizing: border-box;
-}
-
-button {
-    margin: 25px;
-    border-radius: 10px;
-    width: 250px;
-    height: 35px;
-    background-color: #838383;
-    border: none;
-}
-
-
-/* Alona  */
-
-#center-alona-mykhailenko {
-    text-align: center;
-}
-
-.menu-container-alona-mykhailenko {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    margin: 10px;
-    padding: 20px;
-    text-align: center;
-}
-
-#menu-column-alona-mykhailenko {
-    flex: 1;
-    padding: 20px;
-    text-align: center;
-
-}
 
+#center-alona-mykhailenko{
+  text-align:center;
+}
+
+ .menu-container-alona-mykhailenko {
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            margin: 10px;
+            padding: 20px;
+            text-align: center;
+        }
+
+  #menu-column-alona-mykhailenko {
+            flex: 1;
+            padding: 20px;
+          text-align:center;
+          
+        }
 .menu-item-alona-mykhailenko {
     width: 95%;
     flex-basis: calc(50% - 10px);
 }
 
 #left-line-alona-mykhailenko {
-    border-top: 3.5px dotted rgb(51, 51, 51, 0.5);
-    width: 95%;
-    padding-right: 20px;
-}
+  border-top: 3.5px dotted rgb(51, 51, 51,0.5);
+  width:95%;
+  padding-right: 20px;
+  
+  
+  }
 
 #right-line-alona-mykhailenko {
-    border-top: 3.5px dotted rgb(51, 51, 51, 0.5);
-    width: 95%;
-    padding-left: 20px;
-
-}
+  border-top: 3.5px dotted rgb(51, 51, 51,0.5);
+  width:95%;
+  padding-left: 20px;
+  
+  } 
 
 
 .section-alona-mykhailenko {
@@ -1017,56 +182,51 @@ button {
     margin: 0 auto;
     border-collapse: collapse;
     text-align: center;
-
+    
 }
 
 @media screen and (max-width: 800px) {
-    .menu-item {
+    .menu-item{
         flex-basis: 100%;
     }
 }
-
 #reservation-form-alona-mykhailenko {
-
+    
     padding: 20px;
     text-align: center;
 }
 
-#big-font-alona-mykhailenko {
+#big-font-alona-mykhailenko{
     font-size: 50px;
 }
 
 
 
 .container-for-photo-alona-mykhailenko {
-    display: inline-flex;
+    display:inline-flex;
     text-align: center;
     align-items: center;
+    
+  }
 
-}
+  .container-for-photo-alona-mykhailenko img {
+    margin-left: 10px; 
+  }
 
-.container-for-photo-alona-mykhailenko img {
-    margin-left: 10px;
-}
-
-.resizable-image-alona-mykhailenko {
-    width: 50px;
-    /* Set the initial width of the image */
-    height: auto;
-    /* Maintain the aspect ratio */
+  .resizable-image-alona-mykhailenko {
+    width: 50px; /* Set the initial width of the image */
+    height: auto; /* Maintain the aspect ratio */
     border-radius: 50%;
-    transition: width 0.5s;
-    /* Add a smooth transition effect */
-    vertical-align: middle;
-    /* Align the image vertically in the middle */
+    transition: width 0.5s; /* Add a smooth transition effect */
+    vertical-align: middle; /* Align the image vertically in the middle */
 }
 
 /* Hover effect */
 .resizable-image-alona-mykhailenko:hover {
-    width: 110px;
-    /* Set the width when hovering over the image */
+    width: 110px; /* Set the width when hovering over the image */
 }
+ #link-alona-mykhailenko{
+    color:#333;
+ }
 
-#link-alona-mykhailenko {
-    color: #333;
-}
+
