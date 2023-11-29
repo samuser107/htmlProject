@@ -6,7 +6,7 @@
     --font-family-main: 'Raleway', sans-serif;
     --font-family-accent: 'Italianno', cursive;
     --background-default: #fff;
-    --background-header : rgba(255, 255, 255, 0.5);
+    --background-header: rgba(255, 255, 255, 0.5);
     --background-form: #f0f0f0;
 }
 
@@ -15,7 +15,7 @@
         --background-default: rgb(26, 26, 26);
         --main-text-color: #f0f0f0;
         --link-hover-color: #c0c0c0;
-        --background-header : rgba(26, 26, 26, 0.5);
+        --background-header: rgba(26, 26, 26, 0.5);
         --background-form: #333;
     }
 
@@ -26,13 +26,18 @@
 
     /* Update other elements as needed for the dark theme */
     header {
-        background: rgba(0, 0, 0, 0.5); /* Example: Darker header background */
+        background: rgba(0, 0, 0, 0.5);
+        /* Example: Darker header background */
     }
 
     /* Continue to define dark theme styles for other elements... */
 }
 
-body, h1, h2, h3, p {
+body,
+h1,
+h2,
+h3,
+p {
     margin: 0;
     padding: 0;
 }
@@ -66,8 +71,8 @@ header h1 a {
 }
 
 
-header h1 a[href="#"], 
-nav ul li a[href="#"], 
+header h1 a[href="#"],
+nav ul li a[href="#"],
 nav ul li a:hover,
 header h1 a:hover {
     color: var(--link-hover-color);
@@ -99,9 +104,9 @@ label[for="menu-toggle"] {
         padding: 5px 0;
     }
 
-    nav, 
+    nav,
     nav ul li,
-    .menu-toggle:checked + .menu-content {
+    .menu-toggle:checked+.menu-content {
         transition: all 0.3s ease-in-out;
     }
 
@@ -125,12 +130,12 @@ label[for="menu-toggle"] {
     }
 }
 
-#menu-toggle:checked ~ nav {
+#menu-toggle:checked~nav {
     display: block;
     transition: height 0.3s ease-in-out;
 }
 
-#menu-toggle:checked + .menu {
+#menu-toggle:checked+.menu {
     opacity: 1;
     visibility: visible;
 }
@@ -165,8 +170,9 @@ section {
     }
 }
 
-.menu-toggle:checked + .menu-items {
-    transform: translateX(0); /* Move the menu on-screen */
+.menu-toggle:checked+.menu-items {
+    transform: translateX(0);
+    /* Move the menu on-screen */
 }
 
 footer {
@@ -176,7 +182,7 @@ footer {
     /* keep on the bottom */
     padding: 10px 0;
     position: relative;
-    left:0;
+    left: 0;
     bottom: 0;
     width: 100%;
     border-top-color: var(--main-text-color);
@@ -184,7 +190,7 @@ footer {
     border-top-width: 1px;
 }
 
-footer p{
+footer p {
     padding-left: 5%;
     padding-right: 5%;
 }
@@ -205,7 +211,8 @@ footer p{
     /* center section */
     text-align: center;
 }
-.Louis-Nicolas-section-reservation{
+
+.Louis-Nicolas-section-reservation {
     /* full width */
     width: 100%;
     margin-top: 0px;
@@ -222,12 +229,13 @@ footer p{
     justify-content: center;
     align-items: center;
 }
-.Louis-Nicolas-section-reservation-element{
+
+.Louis-Nicolas-section-reservation-element {
     /* padding */
     padding: 10px;
 }
 
-#Louis-Nicolas-link{
+#Louis-Nicolas-link {
     color: var(--main-text-color);
     text-decoration: none;
 }
@@ -236,6 +244,7 @@ footer p{
     /* center section */
     text-align: center;
 }
+
 .Louis-Nicolas-section-menu h3 {
     font-family: 'Italianno', cursive;
     font-size: 4rem;
@@ -244,6 +253,7 @@ footer p{
     border-bottom: 1px solid #333;
     display: inline-block;
 }
+
 .Louis-Nicolas-section-menu-border {
     border-bottom: 4px dotted rgba(51, 51, 51, 0.5);
     display: flex;
@@ -258,7 +268,8 @@ footer p{
     margin-bottom: 20px;
     margin-right: 5px;
     margin-left: 5px;
-    flex-basis: calc(50% - 10px); /* Subtract margin */
+    flex-basis: calc(50% - 10px);
+    /* Subtract margin */
 }
 
 @media screen and (max-width: 800px) {
@@ -306,12 +317,13 @@ footer p{
     text-align: center;
     padding-top: 8px;
 }
+
 #Louis-Nicolas-submit-button:hover {
     background: var(--main-text-color);
     color: var(--background-default);
 }
 
-#moulay_ul{
+#moulay_ul {
     /* remove default list styles */
     list-style-type: none;
     justify-content: center;
@@ -323,7 +335,7 @@ footer p{
     padding: 0;
 }
 
-#moulay_choix_commande{
+#moulay_choix_commande {
     top: 0;
     color: var(--main-text-color);
     transition: all 0.5s ease-in-out;
@@ -333,6 +345,7 @@ footer p{
     text-align: center;
     width: 100%;
 }
+
 #moulay_sommaire a {
     margin-right: 15px;
 }
@@ -371,12 +384,12 @@ footer p{
 }
 
 #filipe-introduction a {
-    color: #DAA520; 
+    color: #DAA520;
     transition: color 0.3s, background-color 0.3s;
-  }
+}
 
 #filipe-introduction a:hover {
-    color: #caca79; 
+    color: #caca79;
     text-decoration: none;
 }
 
@@ -391,7 +404,7 @@ footer p{
     object-fit: cover;
 }
 
-#filipe-main-section{
+#filipe-main-section {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -407,24 +420,25 @@ footer p{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
+
 }
-#signature-dishes-title{
+
+#signature-dishes-title {
     text-align: center;
     font-family: 'Italianno', cursive;
     font-size: 100px;
     margin-top: 50px;
 }
 
-#signature-dishes p{
+#signature-dishes p {
     font-size: 20px;
     color: var(--main-text-color);
     text-align: center;
 }
 
-#signature-dishes strong{
+#signature-dishes strong {
     font-size: 30px
-}  
+}
 
 /*------------------------Coq-au-Vin----------------------------*/
 #coq-au-vin {
@@ -433,7 +447,7 @@ footer p{
     justify-content: space-between;
 }
 
-#coq-au-vin p{
+#coq-au-vin p {
     max-width: 50%;
 }
 
@@ -447,16 +461,16 @@ footer p{
     padding-top: 20px;
 }
 
-#risotto-porcini p{
+#risotto-porcini p {
     max-width: 50%;
     margin-left: 2.5%;
-    
+
 }
 
 
 /*-------------------Bottom Signature Dishes---------------------*/
 
-.filipe-table{
+.filipe-table {
     display: flex;
     justify-content: center;
     width: 100%;
@@ -466,17 +480,18 @@ footer p{
     margin-left: 2%;
 }
 
-.filipe-table th, .filipe-table td {
+.filipe-table th,
+.filipe-table td {
     padding: 12px;
     text-align: left;
-    border-bottom: 1px solid #ddd; 
+    border-bottom: 1px solid #ddd;
 }
 
-.filipe-table th{
+.filipe-table th {
     background-color: var(--background-default);
 }
 
-#techniques-ingredients p{
+#techniques-ingredients p {
     max-width: 80%;
     margin-left: 10%;
     padding-top: 20px;
@@ -491,7 +506,7 @@ footer p{
 }
 
 /*-----------------------------------------------Side Dishes,Drinks & Desserts-------------------------------------------------*/
-#side-dishes-title{
+#side-dishes-title {
     text-align: center;
     font-family: 'Italianno', cursive;
     font-size: 100px;
@@ -515,44 +530,44 @@ footer p{
     font-size: 20px;
     color: var(--main-text-color);
     text-align: center;
-    max-width: 1000px; 
+    max-width: 1000px;
 }
 
 @media screen and (max-width: 800px) {
     #filipe-rest-of-menu p {
         column-count: 1;
     }
-    
+
 }
 
 
 /*----------------------------------------------------------CONCLUSION-------------------------------------------------------*/
 
 
-#filipe-conclusion p{
+#filipe-conclusion p {
     font-size: 30px;
     color: var(--main-text-color);
     text-align: center;
-    max-width: 1000px; 
+    max-width: 1000px;
     margin-left: 10%;
     margin-right: 10%;
     margin-top: 50px;
 }
 
-#filipe-conclusion a{
+#filipe-conclusion a {
     color: #DAA520;
     transition: color 0.3s, background-color 0.3s;
 }
 
 #filipe-conclusion a:hover {
     color: #caca79;
-    text-decoration: none; 
-    }
+    text-decoration: none;
+}
 
-#signature-staff-filipe{
+#signature-staff-filipe {
     margin-top: 20px;
     font-family: "Italianno", cursive;
-    font-weight:bold;
+    font-weight: bold;
     font-size: 50px;
     text-decoration: underline;
 }
@@ -575,10 +590,10 @@ footer p{
     margin: 0 auto;
     margin-top: 75px;
     margin-bottom: 75px;
-    
+
 }
 
-#feedback-form-title{
+#feedback-form-title {
     text-align: center;
     font-family: 'Italianno', cursive;
     font-size: 50px;
@@ -590,14 +605,15 @@ footer p{
     flex-direction: column;
     max-width: 100%;
     margin: 0 auto;
-    
+
 }
 
 .filipe-feedback-box label {
     margin-bottom: 10px;
 }
 
-.filipe-feedback-box select, textarea {
+.filipe-feedback-box select,
+textarea {
     margin-bottom: 20px;
     padding: 8px;
     border: 1px solid #ccc;
@@ -605,11 +621,11 @@ footer p{
     resize: none;
 }
 
-.filipe-feedback-box textarea{
+.filipe-feedback-box textarea {
     height: 150px;
 }
 
-.filipe-feedback-box input{
+.filipe-feedback-box input {
     padding: 10px;
     background-color: #4caf50;
     color: #fff;
@@ -653,11 +669,11 @@ footer p{
 
 }
 
-#moulay_choix_commande ul li{
+#moulay_choix_commande ul li {
     list-style-type: none;
 }
 
-.moulay_table{
+.moulay_table {
     margin-left: auto;
     margin-right: auto;
     display: flex;
@@ -679,14 +695,18 @@ footer p{
 }
 
 .moulay_table td {
-    padding: 0 50px; /* Ajoute un espace de 20px à gauche et à droite de chaque cellule */
+    padding: 0 50px;
+    /* Ajoute un espace de 20px à gauche et à droite de chaque cellule */
 }
+
 .moulay_table td ul {
     width: 200px;
 }
+
 .moulay_table td ul li {
     text-align: left;
 }
+
 .moulay_table td ul li input {
     width: 100px;
 }
@@ -705,6 +725,7 @@ footer p{
     height: 20px;
     width: 150px;
 }
+
 /* change background color of moulay_input when in focus and has text */
 .moulay_input:focus:not(:placeholder-shown) {
     background: var(--background-default);
@@ -733,11 +754,14 @@ footer p{
     color: var(--main-text-color);
     border: 1px solid #333;
 }
-#Louis-Nicolas-image-container{
+
+#Louis-Nicolas-image-container {
     justify-content: center;
     position: relative;
-    width: 100%; /* or any desired width */
-    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+    width: 100%;
+    /* or any desired width */
+    padding-top: 56.25%;
+    /* 16:9 Aspect Ratio */
     /* overflow: hidden; */
 }
 
@@ -751,21 +775,22 @@ footer p{
     max-width: 200px;
     height: 50%;
     object-fit: cover;
-  }
-#moulay_adresse_livraison{
+}
+
+#moulay_adresse_livraison {
     margin-left: 45px;
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
-#moulay_link{
+#moulay_link {
     color: var(--main-text-color);
     text-decoration: none;
 }
 
 
-#center{
-  text-align:center;
+#center {
+    text-align: center;
 }
 
 .menu-container-alona-mykhailenko {
@@ -780,30 +805,33 @@ footer p{
 #menu-column-alona-mykhailenko {
     flex: 1;
     padding: 20px;
-    text-align:center;
-    
+    text-align: center;
+
 }
-#menu-item-alona-mykhailenko{
+
+#menu-item-alona-mykhailenko {
     width: 95%;
     /* flex-basis:calc(50%-10px); */
-    flex-basis: calc(50% - 10px); /* Subtract margin */
+    flex-basis: calc(50% - 10px);
+    /* Subtract margin */
 }
+
 .vertical-line-alona {
     border-left: 4px dotted var(--main-text-color);
     height: 900px;
     margin: 0 20px;
 }
-  
+
 #left-line-alona-mykhailenko {
-  border-top: 3.5px dotted var(--main-text-color);
-  width:95%;
-  padding-right: 20px;
+    border-top: 3.5px dotted var(--main-text-color);
+    width: 95%;
+    padding-right: 20px;
 }
 
 #right-line-alona-mykhailenko {
-  border-top: 3.5px dotted var(--main-text-color);
-  width:95%;
-  padding-left: 20px;  
+    border-top: 3.5px dotted var(--main-text-color);
+    width: 95%;
+    padding-left: 20px;
 }
 
 
@@ -812,56 +840,64 @@ footer p{
     margin: 0 auto;
     border-collapse: collapse;
     text-align: center;
-    
+
 }
 
 @media screen and (max-width: 800px) {
-    .menu-item{
+    .menu-item {
         flex-basis: 100%;
     }
 }
+
 #reservation-form-alona-mykhailenko {
-    
+
     padding: 20px;
     text-align: center;
 }
 
-#big-font-alona-mykhailenko{
+#big-font-alona-mykhailenko {
     font-size: 50px;
 }
 
 /* Style for the image */
 
 .container-for-photo {
-    display:inline-flex;
+    display: inline-flex;
     text-align: center;
     align-items: center;
-    
-  }
 
-  .container-for-photo img {
-    margin-left: 10px; /* Adjust the margin as needed */
-  }
+}
 
-  .resizable-image {
-    width: 50px; /* Set the initial width of the image */
-    height: auto; /* Maintain the aspect ratio */
+.container-for-photo img {
+    margin-left: 10px;
+    /* Adjust the margin as needed */
+}
+
+.resizable-image {
+    width: 50px;
+    /* Set the initial width of the image */
+    height: auto;
+    /* Maintain the aspect ratio */
     border-radius: 50%;
-    transition: width 0.5s; /* Add a smooth transition effect */
-    vertical-align: middle; /* Align the image vertically in the middle */
+    transition: width 0.5s;
+    /* Add a smooth transition effect */
+    vertical-align: middle;
+    /* Align the image vertically in the middle */
 }
 
 /* Hover effect */
 .resizable-image:hover {
-    width: 110px; /* Set the width when hovering over the image */
+    width: 110px;
+    /* Set the width when hovering over the image */
 }
- #link{
-    color:var(--main-text-color);
- }
+
+#link {
+    color: var(--main-text-color);
+}
 
 
- /* Reda's CSS for contact page */
- 
+/* Reda's CSS for contact page */
+
 .container_contact {
     max-width: 800px;
     padding: 10px;
@@ -871,19 +907,20 @@ footer p{
     flex-wrap: wrap;
     flex-direction: column;
 }
- #container {
+
+#container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     text-align: center;
     align-items: center;
-    min-height: calc(100vh - 210px); 
- }
+    min-height: calc(100vh - 210px);
+}
 
- #container h2 {
+#container h2 {
     font-family: 'Italianno', cursive;
     font-size: 3rem;
- }
+}
 
 #container_coordinates {
     color: black;
@@ -892,17 +929,17 @@ footer p{
     width: 300px;
     padding: 20px;
     border-radius: 5px;
- }
+}
 
- #btn_reservation {
+#btn_reservation {
     width: 250px;
     height: 35px;
     background-color: #838383;
     border: none;
-    
- }
 
- .container_contact form {
+}
+
+.container_contact form {
     padding: 20px;
     background-color: #f0f0f0;
     border-radius: 5px;
@@ -914,7 +951,8 @@ footer p{
 }
 
 .container_contact input[type="text"],
-.container_contact input[type="email"], .container_contact textarea {
+.container_contact input[type="email"],
+.container_contact textarea {
     margin-bottom: 10px;
     padding: 8px;
     border-radius: 3px;
@@ -923,11 +961,112 @@ footer p{
     box-sizing: border-box;
 }
 
-button{
+button {
     margin: 25px;
     border-radius: 10px;
     width: 250px;
     height: 35px;
     background-color: #838383;
     border: none;
+}
+
+
+/* Alona  */
+
+#center-alona-mykhailenko {
+    text-align: center;
+}
+
+.menu-container-alona-mykhailenko {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+#menu-column-alona-mykhailenko {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+
+}
+
+.menu-item-alona-mykhailenko {
+    width: 95%;
+    flex-basis: calc(50% - 10px);
+}
+
+#left-line-alona-mykhailenko {
+    border-top: 3.5px dotted rgb(51, 51, 51, 0.5);
+    width: 95%;
+    padding-right: 20px;
+}
+
+#right-line-alona-mykhailenko {
+    border-top: 3.5px dotted rgb(51, 51, 51, 0.5);
+    width: 95%;
+    padding-left: 20px;
+
+}
+
+
+.section-alona-mykhailenko {
+    width: 60%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    text-align: center;
+
+}
+
+@media screen and (max-width: 800px) {
+    .menu-item {
+        flex-basis: 100%;
+    }
+}
+
+#reservation-form-alona-mykhailenko {
+
+    padding: 20px;
+    text-align: center;
+}
+
+#big-font-alona-mykhailenko {
+    font-size: 50px;
+}
+
+
+
+.container-for-photo-alona-mykhailenko {
+    display: inline-flex;
+    text-align: center;
+    align-items: center;
+
+}
+
+.container-for-photo-alona-mykhailenko img {
+    margin-left: 10px;
+}
+
+.resizable-image-alona-mykhailenko {
+    width: 50px;
+    /* Set the initial width of the image */
+    height: auto;
+    /* Maintain the aspect ratio */
+    border-radius: 50%;
+    transition: width 0.5s;
+    /* Add a smooth transition effect */
+    vertical-align: middle;
+    /* Align the image vertically in the middle */
+}
+
+/* Hover effect */
+.resizable-image-alona-mykhailenko:hover {
+    width: 110px;
+    /* Set the width when hovering over the image */
+}
+
+#link-alona-mykhailenko {
+    color: #333;
 }
