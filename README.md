@@ -75,10 +75,10 @@ We ask you to write the HTML pages of a website presenting the restaurant of you
 member will write one HTML page of this website and present on this page a part of the restaurant.
 For example, you can present:
 - [x] <b> Louis-Nicolas </b> : The food page of the restaurant.
-- [ ] <b> Alona </b> : The drink page of the restaurant
+- [x] <b> Alona </b> : The drink page of the restaurant
 - [x] <b> Reda </b> : The contact of the restaurant
 - [x] <b> Moulay </b> : The food delivery page of the restaurant : 
-- [ ] <b> Rebecca</b> : The event page of the restaurant
+- [x] <b> Rebecca</b> : The event page of the restaurant
 - [x] <b> Filipe </b> : A page who describes kitchen type
 - ….
 <br/>

@@ -37,7 +37,7 @@
 
 /* ----------------------------------------------------Common SECTION ---------------------------------------------------------------------------*/
 
-main{
+main {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -81,7 +81,7 @@ main{
     transition: color 0.3s ease-in-out;
 }
 
-.welcome-section p{
+.welcome-section p {
     max-width: 800px;
 }
 
@@ -232,7 +232,7 @@ section {
     animation: fadeInUp 1s ease-in-out forwards;
 }
 
-/* Transiction when loeading */
+/* Transition when loading */
 
 @keyframes fadeInUp {
     to {
@@ -431,9 +431,6 @@ footer p {
 
 .chef-image {
     border-radius: 50%;
-    position: relative;
-    top: 0;
-    left: 0;
     width: 20%;
     max-width: 1000px;
     height: 20%;
@@ -764,7 +761,7 @@ textarea {
     max-width: 1000px;
     height: 100px;
     object-fit: cover;
-    background:rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.5);
 
 }
 
@@ -887,7 +884,7 @@ textarea {
 
 }
 
-.menu-group-alona-mykhailenko{
+.menu-group-alona-mykhailenko {
     height: 500px;
     width: 500px;
     display: flex;
@@ -1078,31 +1075,33 @@ button {
 
 
 /* centering the title Events*/
-#center-rebecca-cotta{
+#center-rebecca-cotta {
     font-size: 3rem;
     font-family: var(--font-family-accent);
     text-align: center;
     padding: 10px;
 }
 
-a.rebecca-cotta{
+a.rebecca-cotta {
     color: var(--main-text-color);
 }
-a.rebecca-cotta:hover{
+
+a.rebecca-cotta:hover {
     color: var(--link-hover-color);
     transition: all 0.3s ease-in-out;
 }
 
 /* lowering the text*/
-p.rebecca-cotta{
+p.rebecca-cotta {
     font-size: 20px;
     color: var(--main-text-color);
 }
-h3.rebecca-cotta{
+
+h3.rebecca-cotta {
     margin-top: 40px;
 }
 
-.main-rebecca-cotta{
+.main-rebecca-cotta {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -1113,7 +1112,7 @@ h3.rebecca-cotta{
 
 }
 
-.event-image-rebecca-cotta{
+.event-image-rebecca-cotta {
     border-radius: 5px;
     position: relative;
     top: 0;
@@ -1123,12 +1122,12 @@ h3.rebecca-cotta{
     max-width: 1000px;
     height: 100px;
     object-fit: cover;
-    background:rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.5);
 
 }
 
 /* text + background for the Monday Jazz Event*/
-.Monday-jazz-rebecca-cotta{
+.Monday-jazz-rebecca-cotta {
     margin: 5px;
     padding: 20px;
     text-align: center;
@@ -1141,7 +1140,7 @@ h3.rebecca-cotta{
 }
 
 /* List */
-div.container-rebecca-cotta{
+div.container-rebecca-cotta {
     text-align: center;
 }
 
@@ -1151,7 +1150,7 @@ ul.myUL-rebecca-cotta {
 }
 
 /* text + background for the Thursday Lunch Event*/
-.Thursday-lunch-rebecca-cotta{
+.Thursday-lunch-rebecca-cotta {
     margin: 5px;
     padding: 10px;
     text-align: center;
@@ -1164,7 +1163,7 @@ ul.myUL-rebecca-cotta {
 }
 
 /* text + background for the Saturday Night Event*/
-.Saturday-night-rebecca-cotta{
+.Saturday-night-rebecca-cotta {
     margin: 5px;
     padding: 5px;
     text-align: center;
@@ -1179,31 +1178,35 @@ ul.myUL-rebecca-cotta {
 
 
 /* Table */
-#table-rebecca-cotta{
+#table-rebecca-cotta {
     text-align: center;
 }
-.table-rebecca-cotta{
+
+.table-rebecca-cotta {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 35px;
-    margin-top: 30px ;
+    margin-top: 30px;
     text-align: center;
     width: 35%;
 }
 
-/* Form */ 
-.reservation-form-rebecca-cotta{
+/* Form */
+.reservation-form-rebecca-cotta {
     text-align: center;
     margin-bottom: 20px;
-    margin-top: 10px;  
+    margin-top: 10px;
 }
-select.rebecca-cotta{
+
+select.rebecca-cotta {
     margin-bottom: 15px;
 }
-input.rebecca-cotta{
+
+input.rebecca-cotta {
     margin-bottom: 15px;
 }
-button.rebecca-cotta{
+
+button.rebecca-cotta {
     margin-bottom: 15px;
 }
 
