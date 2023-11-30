@@ -11,6 +11,10 @@
     --background-form: #f0f0f0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* Global variables but in dark mode */
 @media (prefers-color-scheme: dark) {
     :root {
@@ -44,6 +48,23 @@ main {
     justify-content: center;
     width: 100%;
 
+}
+
+.top-link{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 10;
+    font-size: 1rem;
+    color: var(--main-text-color);
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+    background: var(--background-header);
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--main-text-color);
+    transition: all 0.3s ease-in-out;
 }
 
 .welcome {
@@ -327,6 +348,8 @@ footer p {
 .Louis-Nicolas-section-menu {
     /* center section */
     text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 .Louis-Nicolas-section-menu h3 {

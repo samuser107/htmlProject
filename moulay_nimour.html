@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <header>
+    <header role="banner">
         <h1><a href="index.html">La Bella Vita</a></h1>
         <input type="checkbox" id="menu-toggle">
         <label for="menu-toggle">Menu</label>
@@ -24,137 +24,142 @@
             </ul>
         </nav>
     </header>
+    <a href="#mainContent" class="top-link">Back to the top</a>
 
-    <!-- Section de commande en ligne -->
-    <section>
-        <div id="moulay_choix_commande">
-            <div id="moulay_titre">
-                <img src="images/Plats/plate.png" alt="Plats">
-                <h2>Commande en ligne</h2>
-            </div>
+    <main id="mainContent" role="main">
 
-            <form>
-                <h2>Main Course</h2>
-                <table class="moulay_table">
-                    <tr>
-                        <td>
-                            <ul>
-                                <li>Coq au Vin</li>
-                                <li>Beef Bourguignon</li>
-                                <li>Risotto ai Funghi Porcini</li>
-                                <li>Saltimbocca alla Romana</li>
-                                <li>Bouillabaisse</li>
-                            </ul>
-                        </td>
-                        <td>
-                            <ul>
-                                <li><input type="number" min="0"> €30/dish</li>
-                                <li><input type="number" min="0"> €35/dish</li>
-                                <li><input type="number" min="0"> €25/dish</li>
-                                <li><input type="number" min="0"> €32/dish</li>
-                                <li><input type="number" min="0"> €40/dish</li>
-                            </ul>
-                        </td>
-                    </tr>
-                </table>
-
-                <h2>Drinks</h2>
-                <table class="moulay_table">
-                    <tr>
-                        <td>
-                            <ul>
-                                <li>Chianti Classico</li>
-                                <li>House White Wine</li>
-                                <li>Champagne</li>
-                                <li>Peach Bellini</li>
-                                <li>Rosemary Martini</li>
-                                <li>Orange Negroni</li>
-                                <li>Sparkling Citrus Mocktail</li>
-                                <li>Herbal Infusion Delight</li>
-                                <li>Cranberry Ginger Fizz</li>
-                                <li>Fresh Lemonade</li>
-                                <li>Italian Fruit Juice</li>
-                                <li>Sparkling Mineral Water</li>
-                            </ul>
-                        </td>
-                        <td>
-                            <ul>
-                                <li><input type="number" min="0"> €16/glass</li>
-                                <li><input type="number" min="0"> €7/glass</li>
-                                <li><input type="number" min="0"> €8/glass</li>
-                                <li><input type="number" min="0"> €15/glass</li>
-                                <li><input type="number" min="0"> €15/glass</li>
-                                <li><input type="number" min="0"> €14/glass</li>
-                                <li><input type="number" min="0"> €15/glass</li>
-                                <li><input type="number" min="0"> €12/glass</li>
-                                <li><input type="number" min="0"> €15/glass</li>
-                                <li><input type="number" min="0"> €12/glass</li>
-                                <li><input type="number" min="0"> €8/glass</li>
-                                <li><input type="number" min="0"> €5/glass</li>
-                            </ul>
-                        </td>
-                    </tr>
-                </table>
-
-                <h2>Desserts</h2>
-                <table class="moulay_table">
-                    <tr>
-                        <td>
-                            <ul>
-                                <li>Tiramisu</li>
-                                <li>Crème Brûlée</li>
-                            </ul>
-                        </td>
-                        <td>
-                            <ul>
-                                <li><input type="number" min="0"> €14/dish</li>
-                                <li><input type="number" min="0"> €14€/dish</li>
-                            </ul>
-                        </td>
-                    </tr>
-                </table>
-
-                <h2>Dishes</h2>
-                <table class="moulay_table">
-                    <tr>
-                        <td>
-                            <ul>
-                                <li>Ratatouille</li>
-                                <li>Polenta con Tartufo Nero</li>
-                            </ul>
-
-                        </td>
-                        <td>
-                            <ul>
-                                <li><input type="number" min="0"> €17/dish</li>
-                                <li><input type="number" min="0"> €20/dish</li>
-                            </ul>
-                        </td>
-                    </tr>
-                </table>
-
-                <h3>Adresse de livraison</h3>
-                <div id="moulay_adresse_livraison">
-                    <input class="moulay_input" type="text" placeholder="Votre adresse" required>
-                    <input class="moulay_input" type="tel" placeholder="Votre numéro de téléphone" required>
-                    <button id="moulay-submit-button" type="submit">Passer la commande</button>
+        <!--Online order Section -->
+        <section>
+            <div id="moulay_choix_commande">
+                <div id="moulay_titre">
+                    <img src="images/Plats/plate.png" alt="Plats">
+                    <h2>Commande en ligne</h2>
                 </div>
-            </form>
-            <h2>Find Us</h2>
-            <ul id="moulay_ul">
-                <li>
-                    <img src="images/Restaurant-Interior.png" alt="Restaurant Interior"
-                        id="Louis-Nicolas-Image-Responsive">
-                </li>
-                <li>
-                    <p><a id="moulay_link" target="_blank" href="https://www.google.com/maps/place/La+Bella+Vita">Click
-                            here to find us on Google Maps</a></p>
-                </li>
-            </ul>
-        </div>
-    </section>
 
-    <footer>
+                <form>
+                    <h2>Main Course</h2>
+                    <table class="moulay_table">
+                        <tr>
+                            <td>
+                                <ul>
+                                    <li>Coq au Vin</li>
+                                    <li>Beef Bourguignon</li>
+                                    <li>Risotto ai Funghi Porcini</li>
+                                    <li>Saltimbocca alla Romana</li>
+                                    <li>Bouillabaisse</li>
+                                </ul>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li><input type="number" min="0"> €30/dish</li>
+                                    <li><input type="number" min="0"> €35/dish</li>
+                                    <li><input type="number" min="0"> €25/dish</li>
+                                    <li><input type="number" min="0"> €32/dish</li>
+                                    <li><input type="number" min="0"> €40/dish</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <h2>Drinks</h2>
+                    <table class="moulay_table">
+                        <tr>
+                            <td>
+                                <ul>
+                                    <li>Chianti Classico</li>
+                                    <li>House White Wine</li>
+                                    <li>Champagne</li>
+                                    <li>Peach Bellini</li>
+                                    <li>Rosemary Martini</li>
+                                    <li>Orange Negroni</li>
+                                    <li>Sparkling Citrus Mocktail</li>
+                                    <li>Herbal Infusion Delight</li>
+                                    <li>Cranberry Ginger Fizz</li>
+                                    <li>Fresh Lemonade</li>
+                                    <li>Italian Fruit Juice</li>
+                                    <li>Sparkling Mineral Water</li>
+                                </ul>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li><input type="number" min="0"> €16/glass</li>
+                                    <li><input type="number" min="0"> €7/glass</li>
+                                    <li><input type="number" min="0"> €8/glass</li>
+                                    <li><input type="number" min="0"> €15/glass</li>
+                                    <li><input type="number" min="0"> €15/glass</li>
+                                    <li><input type="number" min="0"> €14/glass</li>
+                                    <li><input type="number" min="0"> €15/glass</li>
+                                    <li><input type="number" min="0"> €12/glass</li>
+                                    <li><input type="number" min="0"> €15/glass</li>
+                                    <li><input type="number" min="0"> €12/glass</li>
+                                    <li><input type="number" min="0"> €8/glass</li>
+                                    <li><input type="number" min="0"> €5/glass</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <h2>Desserts</h2>
+                    <table class="moulay_table">
+                        <tr>
+                            <td>
+                                <ul>
+                                    <li>Tiramisu</li>
+                                    <li>Crème Brûlée</li>
+                                </ul>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li><input type="number" min="0"> €14/dish</li>
+                                    <li><input type="number" min="0"> €14€/dish</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <h2>Dishes</h2>
+                    <table class="moulay_table">
+                        <tr>
+                            <td>
+                                <ul>
+                                    <li>Ratatouille</li>
+                                    <li>Polenta con Tartufo Nero</li>
+                                </ul>
+
+                            </td>
+                            <td>
+                                <ul>
+                                    <li><input type="number" min="0"> €17/dish</li>
+                                    <li><input type="number" min="0"> €20/dish</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <h3>Adresse de livraison</h3>
+                    <div id="moulay_adresse_livraison">
+                        <input class="moulay_input" type="text" placeholder="Votre adresse" required>
+                        <input class="moulay_input" type="tel" placeholder="Votre numéro de téléphone" required>
+                        <button id="moulay-submit-button" type="submit">Passer la commande</button>
+                    </div>
+                </form>
+                <h2>Find Us</h2>
+                <ul id="moulay_ul">
+                    <li>
+                        <img src="images/Restaurant-Interior.png" alt="Restaurant Interior"
+                            id="Louis-Nicolas-Image-Responsive">
+                    </li>
+                    <li>
+                        <p><a id="moulay_link" target="_blank"
+                                href="https://www.google.com/maps/place/La+Bella+Vita">Click
+                                here to find us on Google Maps</a></p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer role="contentinfo">
         <p>Moulay Nimour - Louis-Nicolas Longheval - Alona Mykhailenko - Filipe Lopes De Sousa - Rebecca Cotta - Reda
             Khalil</p>
         <p class="image-credits">Images Credits :
