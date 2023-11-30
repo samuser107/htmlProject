@@ -265,6 +265,15 @@ footer p {
     padding-left: 5%;
     padding-right: 5%;
 }
+.image-credits {
+    font-size: small;
+}
+.image-credits a{
+    color: var(--link-hover-color);
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+
+}
 /* ----------------------------------------------------END Common SECTION ---------------------------------------------------------------------------*/
 
 
