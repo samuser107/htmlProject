@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&family=Italianno&display=swap');
 
+/* Global variables */
 :root {
     --main-text-color: #333;
     --link-hover-color: rgb(131, 131, 131);
@@ -10,6 +11,7 @@
     --background-form: #f0f0f0;
 }
 
+/* Global variables but in dark mode */
 @media (prefers-color-scheme: dark) {
     :root {
         --background-default: rgb(26, 26, 26);
@@ -32,6 +34,8 @@
 
     /* Continue to define dark theme styles for other elements... */
 }
+
+/* ----------------------------------------------------Common SECTION ---------------------------------------------------------------------------*/
 
 main{
     display: flex;
@@ -228,6 +232,8 @@ section {
     animation: fadeInUp 1s ease-in-out forwards;
 }
 
+/* Transiction when loeading */
+
 @keyframes fadeInUp {
     to {
         opacity: 1;
@@ -259,6 +265,10 @@ footer p {
     padding-left: 5%;
     padding-right: 5%;
 }
+/* ----------------------------------------------------END Common SECTION ---------------------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------Louis-Nicolas SECTION ---------------------------------------------------------------------------*/
 
 #Louis-Nicolas-menu {
     margin: 20px 0;
@@ -388,33 +398,25 @@ footer p {
     color: var(--background-default);
 }
 
-#moulay_ul {
-    /* remove default list styles */
-    list-style-type: none;
+#Louis-Nicolas-image-container {
     justify-content: center;
-    /* center list */
-    margin: 0 auto;
-    /* set list width to 80% of page */
-    width: 50%;
-    list-style: none;
-    padding: 0;
-}
-
-#moulay_choix_commande {
-    top: 0;
-    color: var(--main-text-color);
-    transition: all 0.5s ease-in-out;
-    margin-top: 10px;
-    padding: 10px 0;
     position: relative;
-    text-align: center;
     width: 100%;
+    padding-top: 56.25%;
 }
 
-#moulay_sommaire a {
-    margin-right: 15px;
+#Louis-Nicolas-Image-Responsive {
+    border-radius: 5px;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 30%;
+    max-width: 200px;
+    height: 50%;
+    object-fit: cover;
 }
 
+/*----------------------------------------------------END Louis-Nicolas SECTION-------------------------------------------------------------------------*/
 
 /* ----------------------------------------------------FILIPE SECTION ---------------------------------------------------------------------------*/
 /*-----------------------------------------------------------Intro-------------------------------------------------------*/
@@ -646,8 +648,6 @@ footer p {
 
 
 .filipe-feedback-box {
-    /* create error */
-
     background-color: var(--background-form);
     width: 50%;
     padding: 12px;
@@ -706,6 +706,37 @@ textarea {
 }
 
 /*----------------------------------------------------END FILIPE SECTION-------------------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------Moulay SECTION ---------------------------------------------------------------------------*/
+#moulay_ul {
+    /* remove default list styles */
+    list-style-type: none;
+    justify-content: center;
+    /* center list */
+    margin: 0 auto;
+    /* set list width to 80% of page */
+    width: 50%;
+    list-style: none;
+    padding: 0;
+}
+
+#moulay_choix_commande {
+    top: 0;
+    color: var(--main-text-color);
+    transition: all 0.5s ease-in-out;
+    margin-top: 10px;
+    padding: 10px 0;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+#moulay_sommaire a {
+    margin-right: 15px;
+}
+
+
 
 
 #moulay_titre {
@@ -823,27 +854,7 @@ textarea {
     border: 1px solid #333;
 }
 
-#Louis-Nicolas-image-container {
-    justify-content: center;
-    position: relative;
-    width: 100%;
-    /* or any desired width */
-    padding-top: 56.25%;
-    /* 16:9 Aspect Ratio */
-    /* overflow: hidden; */
-}
 
-#Louis-Nicolas-Image-Responsive {
-    /* corner radius */
-    border-radius: 5px;
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 30%;
-    max-width: 200px;
-    height: 50%;
-    object-fit: cover;
-}
 
 #moulay_adresse_livraison {
     margin-left: 45px;
@@ -856,11 +867,9 @@ textarea {
     text-decoration: none;
 }
 
+/* ----------------------------------------------------END Moulay SECTION ---------------------------------------------------------------------------*/
 
-#center {
-    text-align: center;
-}
-
+/* ----------------------------------------------------Alona SECTION ---------------------------------------------------------------------------*/
 .menu-container-alona-mykhailenko {
     display: flex;
     align-items: flex-start;
@@ -933,21 +942,23 @@ textarea {
     font-size: 50px;
 }
 
-/* Style for the image */
 
-.container-for-photo {
+#link {
+    color: var(--main-text-color);
+}
+
+.container-for-photo-alona-mykhailenko {
     display: inline-flex;
     text-align: center;
     align-items: center;
 
 }
 
-.container-for-photo img {
+.container-for-photo-alona-mykhailenko img {
     margin-left: 10px;
-    /* Adjust the margin as needed */
 }
 
-.resizable-image {
+.resizable-image-alona-mykhailenko {
     width: 50px;
     /* Set the initial width of the image */
     height: auto;
@@ -960,18 +971,34 @@ textarea {
 }
 
 /* Hover effect */
-.resizable-image:hover {
+.resizable-image-alona-mykhailenko:hover {
     width: 110px;
     /* Set the width when hovering over the image */
 }
 
-#link {
+#link-alona-mykhailenko {
     color: var(--main-text-color);
 }
 
+#center-alona-mykhailenko {
+    text-align: center;
+    font-family: var(--font-family-accent);
+    font-size: 3rem;
+}
 
-/* Reda's CSS for contact page */
 
+.section-alona-mykhailenko {
+    width: 60%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    text-align: center;
+
+}
+
+/* ----------------------------------------------------END Alona SECTION ---------------------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------Reda SECTION ---------------------------------------------------------------------------*/
 .container_contact {
     max-width: 800px;
     padding: 10px;
@@ -1045,73 +1072,9 @@ button {
 }
 
 
-#center-alona-mykhailenko {
-    text-align: center;
-    font-family: var(--font-family-accent);
-    font-size: 3rem;
-}
+/* ----------------------------------------------------END Alona SECTION ---------------------------------------------------------------------------*/
 
-
-.section-alona-mykhailenko {
-    width: 60%;
-    margin: 0 auto;
-    border-collapse: collapse;
-    text-align: center;
-
-}
-
-@media screen and (max-width: 800px) {
-    .menu-item {
-        flex-basis: 100%;
-    }
-}
-
-#reservation-form-alona-mykhailenko {
-
-    padding: 20px;
-    text-align: center;
-}
-
-#big-font-alona-mykhailenko {
-    font-size: 50px;
-}
-
-
-
-.container-for-photo-alona-mykhailenko {
-    display: inline-flex;
-    text-align: center;
-    align-items: center;
-
-}
-
-.container-for-photo-alona-mykhailenko img {
-    margin-left: 10px;
-}
-
-.resizable-image-alona-mykhailenko {
-    width: 50px;
-    /* Set the initial width of the image */
-    height: auto;
-    /* Maintain the aspect ratio */
-    border-radius: 50%;
-    transition: width 0.5s;
-    /* Add a smooth transition effect */
-    vertical-align: middle;
-    /* Align the image vertically in the middle */
-}
-
-/* Hover effect */
-.resizable-image-alona-mykhailenko:hover {
-    width: 110px;
-    /* Set the width when hovering over the image */
-}
-
-#link-alona-mykhailenko {
-    color: var(--main-text-color);
-}
-
-/* REBECCA */
+/* ----------------------------------------------------Rebecca SECTION ---------------------------------------------------------------------------*/
 
 
 /* centering the title Events*/
@@ -1243,3 +1206,5 @@ input.rebecca-cotta{
 button.rebecca-cotta{
     margin-bottom: 15px;
 }
+
+/* ----------------------------------------------------END Rebecca SECTION ---------------------------------------------------------------------------*/
