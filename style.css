@@ -33,27 +33,53 @@
     /* Continue to define dark theme styles for other elements... */
 }
 
-.tile-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
+.welcome {
+    text-align: center;
+    padding: 20px;
 }
 
-.tile {
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    background-color: var(--background-form);
-    margin: 10px;
-    padding: 20px;
-    border-radius: 8px;
-    text-decoration: none;
+.welcome h2 {
     color: var(--main-text-color);
-    transition: background-color 0.3s;
-    height: 100px;
-    position: relative;
+}
+
+.welcome p {
+    color: var(--link-hover-color);
+}
+
+.welcome-link {
+    color: var(--link-hover-color);
+    text-decoration: none;
+}
+
+.welcome-section {
+    padding: 20px;
+    margin: 20px;
+    border-bottom: 1px solid var(--link-hover-color);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    /* no link underline */
+    text-decoration: none;
+    /* no link color */
+    color: var(--main-text-color);
+    /* no link hover color */
+    transition: color 0.3s ease-in-out;
+}
+
+.welcome-section p{
+    width: 800px;
+}
+
+.welcome-section h2 {
+    color: var(--main-text-color);
+}
+
+.welcome-section:hover {
+    background: var(--background-form);
+    transition: all 0.3s ease-in-out;
+    border-radius: 5px;
 }
 
 body,
@@ -91,6 +117,13 @@ header h1 a {
     text-decoration: none;
     transition: color 0.3s ease-in-out;
     white-space: nowrap;
+}
+
+header h1 {
+    font-family: var(--font-family-accent);
+    font-size: 2rem;
+    margin: 0;
+
 }
 
 
@@ -269,7 +302,7 @@ footer p {
 }
 
 .Louis-Nicolas-section-menu h3 {
-    font-family: 'Italianno', cursive;
+    font-family: var(--font-family-accent);
     font-size: 4rem;
     margin-bottom: 20px;
     /* h3 underlined */
@@ -448,7 +481,7 @@ footer p {
 
 #signature-dishes-title {
     text-align: center;
-    font-family: 'Italianno', cursive;
+    font-family: var(--font-family-accent);
     font-size: 100px;
     margin-top: 50px;
 }
@@ -532,7 +565,7 @@ footer p {
 /*-----------------------------------------------Side Dishes,Drinks & Desserts-------------------------------------------------*/
 #side-dishes-title {
     text-align: center;
-    font-family: 'Italianno', cursive;
+    font-family: var(--font-family-accent);
     font-size: 100px;
     margin-top: 50px;
 }
@@ -591,7 +624,7 @@ footer p {
 
 #signature-staff-filipe {
     margin-top: 20px;
-    font-family: "Italianno", cursive;
+    font-family: var(--font-family-accent);
     font-weight: bold;
     font-size: 50px;
     text-decoration: underline;
@@ -620,7 +653,7 @@ footer p {
 
 #feedback-form-title {
     text-align: center;
-    font-family: 'Italianno', cursive;
+    font-family: var(--font-family-accent);
     font-size: 50px;
     margin-top: 50px;
 }
@@ -667,7 +700,7 @@ textarea {
 
 
 #moulay_titre {
-    font-family: 'Italianno', cursive;
+    font-family: var(--font-family-accent);
     font-size: 3rem;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -675,7 +708,7 @@ textarea {
 }
 
 #moulay_titre h1 {
-    padding-left: 10px;
+    /* padding-left: 10px; */
     padding-bottom: 10px;
 }
 
@@ -691,6 +724,7 @@ textarea {
     max-width: 1000px;
     height: 100px;
     object-fit: cover;
+    background:rgba(0, 0, 0, 0.5);
 
 }
 
@@ -949,7 +983,7 @@ textarea {
 }
 
 #container h2 {
-    font-family: 'Italianno', cursive;
+    font-family: var(--font-family-accent);
     font-size: 3rem;
 }
 
@@ -1066,4 +1100,152 @@ button {
 
 #link-alona-mykhailenko {
     color: var(--main-text-color);
+}
+
+/* REBECCA */
+
+
+/* centering the title Events*/
+#center-rebecca-cotta{
+    font-size: 3rem;
+    font-family: var(--font-family-accent);
+    text-align: center;
+    padding: 10px;
+}
+
+a.rebecca-cotta{
+    color: var(--main-text-color);
+}
+a.rebecca-cotta:hover{
+    color: var(--link-hover-color);
+    transition: all 0.3s ease-in-out;
+}
+
+/* lowering the text*/
+p.rebecca-cotta{
+    font-size: 20px;
+    color: var(--main-text-color);
+}
+h3.rebecca-cotta{
+    margin-top: 40px;
+}
+
+.main-rebecca-cotta{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1000px;
+
+}
+
+.event-image-rebecca-cotta{
+    border-radius: 5px;
+    position: relative;
+    top: 0;
+    left: 0;
+    /* screen width */
+    width: 100%;
+    max-width: 1000px;
+    height: 100px;
+    object-fit: cover;
+    background:rgba(0, 0, 0, 0.5);
+
+}
+
+/* text + background for the Monday Jazz Event*/
+.Monday-jazz-rebecca-cotta{
+    margin: 5px;
+    padding: 20px;
+    text-align: center;
+    opacity: 0.8;
+    /* background-image: url("images/saxophone.jpg") ;
+    background-position: center;
+    background-size: 100%;
+    width: fit-content;
+    height: 400px; */
+    border-radius: 5px;
+    color: var(--main-text-color);
+    margin-top: 25px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+/* List */
+div.container-rebecca-cotta{
+    text-align: center;
+}
+
+ul.myUL-rebecca-cotta {
+    display: inline-block;
+    text-align: center;
+}
+
+/* text + background for the Thursday Lunch Event*/
+.Thursday-lunch-rebecca-cotta{
+    margin: 5px;
+    padding: 10px;
+    text-align: center;
+    opacity: 0.8;
+    /* background-image: url("images/Lunch.jpg") ; */
+    /* background-position: center; */
+    /* background-size: 100%; */
+    /* width: fit-content; */
+    /* height: 400px; */
+    border-radius: 5px;
+    color: var(--main-text-color);
+    margin-top: 25px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+/* text + background for the Saturday Night Event*/
+.Saturday-night-rebecca-cotta{
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+    opacity: 0.8;
+    /* background-image: url("images/SaturdayNight.jpg") ;
+    background-position: center;
+    background-size: 100%;
+    width: fit-content;
+    height: 400px; */
+    border-radius: 5px;
+    color: var(--main-text-color);
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+
+/* Table */
+#table-rebecca-cotta{
+    text-align: center;
+}
+.table-rebecca-cotta{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 35px;
+    margin-top: 30px ;
+    text-align: center;
+    width: 35%;
+}
+
+/* Form */ 
+.reservation-form-rebecca-cotta{
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 10px;  
+}
+select.rebecca-cotta{
+    margin-bottom: 15px;
+}
+input.rebecca-cotta{
+    margin-bottom: 15px;
+}
+button.rebecca-cotta{
+    margin-bottom: 15px;
 }
